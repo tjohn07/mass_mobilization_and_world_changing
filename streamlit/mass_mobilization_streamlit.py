@@ -13,6 +13,8 @@ from io import BytesIO
 import re
 import mass_mobil_functions as mmf
 
+import joblib
+
 #World Governance Indicators, to look at change in indicators over time
 wgi = pd.read_csv('../data/transformed/wgi_pivot.csv')
 
@@ -33,13 +35,52 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 # colors = "CMRmap_r"
 sns.set_palette("icefire")
 
+country_list = sorted(['Canada', 'Cuba', 'Haiti', 'Dominican Republic (the)', 'Jamaica',
+       'Mexico', 'Guatemala', 'Honduras', 'El Salvador', 'Nicaragua',
+       'Costa Rica', 'Panama', 'Colombia',
+       'Venezuela (Bolivarian Republic of)', 'Guyana', 'Suriname',
+       'Ecuador', 'Peru', 'Brazil', 'Bolivia (Plurinational State of)',
+       'Paraguay', 'Chile', 'Argentina', 'Uruguay',
+       'United Kingdom of Great Britain and Northern Ireland (the)',
+       'Ireland', 'Netherlands (the)', 'Belgium', 'France', 'Switzerland',
+       'Spain', 'Portugal', 'Germany', 'Poland', 'Austria', 'Hungary',
+       'Czech Republic (the)', 'Slovakia', 'Italy', 'Albania', 'Kosovo',
+       'Serbia', 'the former Yugoslav Republic of Macedonia', 'Croatia',
+       'Bosnia and Herzegovina', 'Montenegro', 'Slovenia', 'Greece',
+       'Cyprus', 'Bulgaria', 'Republic of Moldova (the)', 'Romania',
+       'Russian Federation (the)', 'Estonia', 'Latvia', 'Lithuania',
+       'Ukraine', 'Belarus', 'Armenia', 'Georgia', 'Azerbaijan',
+       'Finland', 'Sweden', 'Norway', 'Denmark', 'Guinea-Bissau',
+       'Equatorial Guinea', 'Gambia (the)', 'Mali', 'Senegal', 'Benin',
+       'Mauritania', 'Niger (the)', "Côte d'Ivoire", 'Guinea',
+       'Burkina Faso', 'Liberia', 'Sierra Leone', 'Ghana', 'Togo',
+       'Cameroon', 'Nigeria', 'Gabon', 'Central African Republic (the)',
+       'Chad', 'Congo (the)', 'Democratic Republic of the Congo (the)',
+       'Uganda', 'Kenya', 'United Republic of Tanzania (the)', 'Burundi',
+       'Rwanda', 'Somalia', 'Djibouti', 'South Sudan', 'Ethiopia',
+       'Eritrea', 'Angola', 'Mozambique', 'Zambia', 'Zimbabwe', 'Malawi',
+       'South Africa', 'Namibia', 'Lesotho', 'Botswana', 'Madagascar',
+       'Comoros (the)', 'Mauritius', 'Morocco', 'Algeria', 'Tunisia',
+       'Libya', 'Sudan (the)', 'Iran (Islamic Republic of)', 'Turkey',
+       'Iraq', 'Egypt', 'Syrian Arab Republic', 'Lebanon', 'Jordan',
+       'Saudi Arabia', 'Yemen', 'Kuwait', 'Bahrain',
+       'United Arab Emirates (the)', 'Oman', 'Afghanistan',
+       'Turkmenistan', 'Tajikistan', 'Kyrgyzstan', 'Uzbekistan',
+       'Kazakhstan', 'China', 'Mongolia', 'Taiwan',
+       "Democratic People's Republic of Korea (the)",
+       'Republic of Korea (the)', 'Japan', 'India', 'Pakistan',
+       'Bangladesh', 'Myanmar', 'Sri Lanka', 'Nepal', 'Thailand',
+       'Cambodia', 'Viet Nam', 'Malaysia', 'Singapore',
+       'Philippines (the)', 'Indonesia', 'Timor-Leste',
+       'Papua New Guinea'])
+
 
 st.sidebar.title('Mass Mobilization and World Changing')
 st.sidebar.subheader('A Study of the Mass Mobilization Dataset Alongside Various Indices')
 
 
 
-page = st.sidebar.selectbox( 'Select a page', ('About', 'Data by Country', 'Case Studies', 'Time Series Model'))
+page = st.sidebar.selectbox( 'Select a page', ('About', 'Data by Country', 'Case Studies', 'Multiclass Classification Model'))
 
 if page == 'About':
     st.header('Mass Mobilization and World Changing')
@@ -96,6 +137,7 @@ if page == 'Data by Country':
             input: a cleaned worldbank dataframe and a country
             output: a country specific dataframe with a datetime index by year and plot it
             '''
+
             #filter wgi dataframe by country and plot
             df = df[df['country_name'] ==  country.title()]
             #sort by year
@@ -158,7 +200,9 @@ if page == 'Data by Country':
             plt.yticks(fontsize=18)
             plt.xticks(df.index[0::steps], fontsize=12, rotation=20);
 
+
     st.pyplot(time_series_by_country(wgi, fiw, mm, country=country))
+
 
 
 
@@ -185,283 +229,167 @@ if page == 'Case Studies':
     container = st.container()
     # with st.container():
     container.image('./streamlit_images/mali_metrics.png')
-    st.write("In taking a closer look at Mali, we see that it was ranked 'Not Free' until 2012, was upgraded to 'Partially Free' in 2013, and then to 'Free' from 2014-2020. In 2012, just preceding the change to 'Partially Free,' we can not a spoke in number or protests. It doing some light research, we see that Mali experienced a coup in 2012. You can read more about the situation in Mali here:") 
+    st.write("In taking a closer look at Mali, we see that it was ranked 'Not Free' until 2012, was upgraded to 'Partially Free' in 2013, and then to 'Free' from 2014-2020. In 2012, just preceding the change to 'Partially Free,' we can not a spoke in number or protests. It doing some light research, we see that Mali experienced a coup in 2012. You can read more about the situation in Mali here:")
     st.caption('https://freedomhouse.org/country/mali/freedom-world/2021. ')
 
 # Content Based Filtering
 
-if page == "Content Based Filtering":
+if page == "Multiclass Classification Model":
+
+    # load the multiclass classification model
+    stacks = joblib.load('./models/multiclass.pkl')
+
+    # @st.cache()
+
+    st.header('Predicting State Response to a Protest')
 
 
-    # read in dataframes
-    #loan_id_df = pd.read_csv("../data/transformed/loan_id.csv")
-    model_df = pd.read_csv("./streamlit_data/processed_content_filter_data.csv")
-    X = pd.read_csv("./streamlit_data/X_df.csv")
+    def prediction(country, year, protester_violence, participants_count, duration,
+                   motivation):
 
-    # X = model_df.drop(["user_favorite", "volunteer_like", "volunteer_pick", "rancor", "DESCRIPTION",
-    #                    "LOAN_AMOUNT", "LOAN_USE", "TAGS", "TAGS+", "TEXT", "PROCESSED_TEXT", "LOAN_ID"],
-    #                   axis = 1).astype(np.uint8)
-    X = X.to_numpy()
-
-    # st.set_page_config(layout="wide")
-
-    @st.cache()
-
-
-    def recommend(user):
         """
-        user : numpy array
-
-        Takes a user interests array and finds the cosine similarity between user user_interests
-        and available loans.
-
-        Sorts cosine similarity scores by greatest to least and returns the top 5 matching loan ids
+        A function to generate predictions of state response using a stacked multiclass classification model
         """
 
-        # reshape user to column vector
-        user = np.reshape(user, (1, -1))
-
-        # find cosine similarity
-        rec = cosine_similarity(X, user)
-
-        # creates an ordinal that will stand in for the dataframe index to track which scores pair with
-        # which index in the dataframe
-        ordinals = [i for i in range(len(rec.ravel()))]
-        rec_ordinal = list(zip(rec.ravel(), ordinals))
-
-        # sorts by cosine similarity score
-        sorted_index = sorted(rec_ordinal, key = lambda x: x[0], reverse=True)
-
-        # slice
-        top_loan_ids = [(x, model_df.iloc[y][0]) for x, y in sorted_index[0:5]]
-
-        return top_loan_ids
-
-    st.title("Content Based Filter")
-    st.write("Tell us which sector interests you the most.")
-
-    cols = st.columns(5)
-    agro_sector = cols[0].checkbox("Agriculture")
-    retail_sector = cols[1].checkbox("Retail")
-    it_sector = cols[2].checkbox("Computers and Technology")
-    education_sector = cols[3].checkbox("Education")
-    health_sanitation_sector = cols[4].checkbox("Health and Sanitation")
-
-    cols2 = st.columns(5)
-    arts_sector =  cols2[0].checkbox("Arts")
-    construction_sector = cols2[1].checkbox("Construction")
-    entertainment_sector = cols2[2].checkbox("Entertainment")
-    health_sector = cols2[3].checkbox("Health")
-    manufacturing_sector = cols2[4].checkbox("Manufacturing")
-
-    st.write("Tell us about the projects and people you are interested in by selecting 5 or more items below.")
-
-    cols3 = st.columns(5)
-    livestock = cols3[0].checkbox("Livestock")
-    water = cols3[1].checkbox("Water-Filtration")
-    women_owned = cols3[2].checkbox("Women-Owned Business")
-    blacksmith = cols3[3].checkbox("Blacksmith")
-    rrr = cols3[4].checkbox("Repair Renew Replace")
-
-    cols4 = st.columns(5)
-    dream = cols4[0].checkbox("Dream")
-    female_operated = cols4[1].checkbox("Female Operated")
-    school_fees_children = cols4[2].checkbox("School Fees(Young Children)")
-    single_mother = cols4[3].checkbox("Single Mother")
-    well_digging = cols4[4].checkbox("Well Digging")
-
-    cols5 = st.columns(5)
-    orphan = cols5[0].checkbox("Orphan")
-    medical_expenses = cols5[1].checkbox("Medical: Expenses")
-    textile = cols5[2].checkbox("Textiles")
-    dairy = cols5[3].checkbox("Dairy")
-    expand_business = cols5[4].checkbox("Expand Business")
-
-    cols7 = st.columns(5)
-    repeat_borrower = cols7[0].checkbox("Repeat Borrower")
-    family = cols7[1].checkbox("Support Families")
-    sanitation = cols7[2].checkbox("Sanitation")
-    c19 = cols7[3].checkbox("Covid-19 Relief")
-    vegan = cols7[4].checkbox("Vegan")
-
-    cols8 = st.columns(5)
-    latin = cols8[0].checkbox("Hispanic/Latinx Owned Business")
-    school_fees_adoles = cols8[1].checkbox("School Fees(Adolescent)")
-    sustainable = cols8[2].checkbox("Sustainable Agriculture")
-    senior = cols8[3].checkbox("Senior Person(s)")
-    job_creator = cols8[4].checkbox("Job Creator")
-
-    if st.button("Fund an entrepeneur."):
-        print(agro_sector)
-
-        # an array of zeros equal in length to numbero f columns in x to examine cosine similarity with user/user user_interests
-        # and available loans
-        user = np.zeros(X.shape[1])
-
-        # Pairing column number with column name allowing for manual selection and grouping user interests
-        # [print(f"{i} {j}") for i, j in enumerate(X_df.columns)]
-
-        # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-        # Sector and Industry                                                                   #
-        # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-
-
-        if agro_sector == True: # = cols[0].checkbox("Agriculture")
-            user[[10, 172]] = 1
-
-        elif retail_sector == True: # = cols[1].checkbox("Retail")
-            user[[16, 19, 23 , 43, 70, 92]] = 1
-
-        elif it_sector == True: #= cols[2].checkbox("Computers and Technology")
-            user[[46, 47, 91, 183]] = 1
-
-        elif education_sector == True: #= cols[3].checkbox("Education")
-            user[[176, 132]] = 1
-
-        elif health_sanitation_sector == True: #= cols[4].checkbox("Health and Sanitation")
-            user[[179, 85]] = 1
-
-        elif arts_sector == True: # =  cols2[0].checkbox("Arts")
-            user[[14, 173, 61]] = 1
-
-        elif construction_sector == True:# = cols2[1].checkbox("Construction")
-            user[[48, 49, 175]] = 1
-
-        elif entertainment_sector == True:#= cols2[2].checkbox("Entertainment")
-            user[[80, 177, 63]] = 1
-
-        elif health_sector == True: #= cols2[3].checkbox("Health")
-            user[179, 132, 102] = 1
-
-        elif manufacturing_sector == True: #= cols2[4].checkbox("Manufacturing")
-            user[[181, 101]] = 1
-
-    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-    # Projects and People                                                                   #
-    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-
-        elif livestock == True: #= cols3[0].checkbox("Livestock")
-            user[[187, 129, 131, 20]] = 1
-
-        elif water == True: #= cols3[1].checkbox("Water-Filtration")
-            user[[240, 228]] = 1
-
-        elif women_owned == True: #= cols3[2].checkbox("Women-Owned Business")
-            user[[222]] = 1
-
-        elif blacksmith == True: #= cols3[3].checkbox("Blacksmith")
-            user[[24]] = 1
-
-        elif rrr == True: #= cols3[4].checkbox("Repair Renew Replace")
-            user[[206, 48, 49, ]] = 1
-
-        elif dream == True: #= cols4[0].checkbox("Dream")
-            user[[227]] = 1
-
-        elif female_operated == True: #= cols4[1].checkbox("Female Operated")
-            user[[0]] = 1
-
-        elif school_fees_children == True: #= cols4[2].checkbox("School Fees(Young Children)")
-            user[[223, 224, 238, 224, 208]] = 1
-
-        elif single_mother == True: #= cols4[3].checkbox("Single Mother")
-            user[[239]] = 1
-
-        elif well_digging == True: #= cols4[4].checkbox("Well Digging")
-            user[[170]] = 1
-
-        elif orphan == True: #= cols5[0].checkbox("Orphan")
-            user[[202]] = 1
-
-        elif medical_expenses == True: #= cols5[1].checkbox("Medical: Expenses")
-            user[[236]] = 1
-
-        elif textile == True: #= cols5[2].checkbox("Textiles")
-            user[[154]] = 1
-
-        elif dairy == True: #= cols5[3].checkbox("Dairy")
-            user[[53]] = 1
-
-        elif expand_business == True: #= cols5[4].checkbox("Expand Business")
-            user[[229, 230]] = 1
-
-        elif repeat_borrower == True: #= cols7[0].checkbox("Repeat Borrower")
-            user[[207]] = 1
-
-        elif family == True: #= cols7[1].checkbox("Support Families")
-            user[[239, 235, 203, 210, 211]] = 1
-
-        elif sanitation == True: #= cols7[2].checkbox("Sanitation")
-            user[[194, 237, 234]] = 1
-
-        elif c19 == True: #= cols7[3].checkbox("Medical: Covid-19")
-            user[[225]] = 1
-
-        elif vegan == True: #= cols7[4].checkbox("Vegan")
-            user[[220]] = 1
-
-        elif latin == True: #= cols8[0].checkbox("Hispanic/Latinx Owned Business")
-            user[[199]] = 1
-
-        elif school_fees_adoles == True: #= cols8[1].checkbox("School Fees(Adolescent)")
-            user[[233, 238, 208]] = 1
-
-        elif sustainable == True: #= cols8[2].checkbox("Sustainable Agriculture")
-            user[[189, 212]] = 1
-
-        elif senior == True: #= cols8[3].checkbox("Senior Person")
-            user[[190]] = 1
-
-        elif job_creator == True: #= cols8[4].checkbox("Job Creator")
-            user[[198]] = 1
-
-
-        recommendations = recommend(user)
-
-        for i in range(0, 4):
-            loan_id = recommendations[i][1]
-            base_url = 'https://api.kivaws.org/graphql?query='
-            graphql_query = '{lend {loan (id: %s){id name gender image {id url} description use geocode{country{name}} loanAmount sector{name}}}}'   %loan_id
-
-            r = requests.post(base_url + graphql_query)
-            r = r.json()
-            url = r['data']['lend']['loan']['image']['url']
-            url_600 = re.sub("s100", "s600", url)
-
-            response = requests.get(url_600)
-            img = Image.open(BytesIO(response.content))
-            img.resize((500,500), Image.ANTIALIAS)
-
-            if i in [0, 1]:
-                cols = st.columns(2)
-                cols[i].image(img)
-                cols[i].write(f'Name: {r["data"]["lend"]["loan"]["name"]}')
-                cols[i].write(f'Country: {r["data"]["lend"]["loan"]["geocode"]["country"]["name"]}')
-                cols[i].write(f'Sector: {r["data"]["lend"]["loan"]["sector"]["name"]}')
-                cols[i].write(f'Use: {r["data"]["lend"]["loan"]["use"].capitalize()}')
-                cols[i].write(f'Loan Amount: {r["data"]["lend"]["loan"]["loanAmount"]}')
-                cols[i].write("Description:")
-                cols[i].write(re.sub("\\r|\\n|\\t|---|<br />", "", r["data"]["lend"]["loan"]["description"])[0:1000] + "...")
-
-
-            if i in [2, 3]:
-                i = i - 2
-                cols2 = st.columns(2)
-                cols2[i].image(img)
-                cols2[i].write(f'Name: {r["data"]["lend"]["loan"]["name"]}')
-                cols2[i].write(f'Country: {r["data"]["lend"]["loan"]["geocode"]["country"]["name"]}')
-                cols2[i].write(f'Sector: {r["data"]["lend"]["loan"]["sector"]["name"]}')
-                cols2[i].write(f'Use: {r["data"]["lend"]["loan"]["use"].capitalize()}')
-                cols2[i].write(f'Loan Amount: {r["data"]["lend"]["loan"]["loanAmount"]}')
-                cols2[i].write("Description:")
-                cols2[i].write(re.sub("\\r|\\n|\\t|---|<br />", "", r["data"]["lend"]["loan"]["description"])[0:500] + "...")
-
-
-        # for i in range(5):
-        #     loan_id = recommendations[i][1]
-        #     base_url = 'https://api.kivaws.org/graphql?query='
-        #     graphql_query = '{lend {loan (id: %s){id name gender image {id url}  }}}'   %loan_id
-        #
-        #     r = requests.post(base_url+ graphql_query)
-        #     r = r.json()
-        #     url = r['data']['lend']['loan']['image']['url']
+        get_country_stats_mm = mm[(mm['country_name'] == country) ].reset_index(drop=True)
+        get_country_stats_wgi = wgi[(wgi['country_name'] == country) & (wgi['year'] == year) ].reset_index(drop=True)
+        get_country_stats_fiw = fiw[(fiw['country_name'] == country) & (fiw['year'] == year) ].reset_index(drop=True)
+
+        try:
+            CC_EST = get_country_stats_wgi['CC.EST'][0]
+            GE_EST = get_country_stats_wgi['GE.EST'][0]
+            PV_NO_SRC = get_country_stats_wgi['PV.NO.SRC'][0]
+            RL_EST = get_country_stats_wgi['RL.EST'][0]
+            VA_EST = get_country_stats_wgi['VA.EST'][0]
+
+            NF = 0
+            PF = 0
+
+            if get_country_stats_fiw['fiw_status'][0] == 'NF':
+                NF = 1
+            elif get_country_stats_fiw['fiw_status'][0] == 'PF':
+                PF = 1
+
+
+            protesterviolence=0
+            if protester_violence == True:
+                protesterviolence = 1
+            else:
+                protesterviolence = 0
+
+            region = get_country_stats_mm['region'][0]
+            asia =0
+            central_america=0
+            europe=0
+            mena=0
+            n_america=0
+            oceania=0
+            s_america=0
+
+            if region == "Asia":
+                asia = 1
+            elif region == "Central America":
+                central_america = 1
+            elif region == "Europe":
+                europe = 1
+            elif region == "Middle East and North Africa":
+                mena = 1
+            elif region == 'North America':
+                n_america = 1
+            elif region == 'Oceania':
+                oceania = 1
+            elif region == 's_america':
+                s_america =1
+
+
+            participants_category = 1
+
+            if participants_count == '50-99':
+                participants_category = 2
+            elif participants_count == '100-999':
+                participants_category = 3
+            elif participants_count == '1000-1999':
+                participants_category = 4
+            elif participants_count == '2000-4999':
+                participants_category = 5
+            elif participants_count == '5000-10000':
+                participants_category = 6
+            elif participants_count == '>10000':
+                participants_category = 7
+            else:
+                participants_category = 1
+
+
+            labor_wage_dispute = 0
+            land_farm_issue = 0
+            police_brutality = 0
+            political_behavior_process = 0
+            price_increases_tax_policy = 0
+            removal_politician = 0
+            social_restrictions = 0
+
+            if motivation == 'labor wage dispute':
+                labor_wage_dispute = 1
+            if motivation == 'land farm issue':
+                land_farm_issue = 1
+            if motivation == 'police brutality':
+                police_brutality = 1
+            if motivation == 'political behavior, process':
+                political_behavior_process = 1
+            if motivation == 'price increases, tax policy':
+                price_increases_tax_policy = 1
+            if motivation == 'removal of politician':
+                removal_politician = 1
+            if motivation == 'social restrictions':
+                social_restrictions = 1
+
+            pred = stacks.predict([[year, protesterviolence, participants_category, duration,
+                                   labor_wage_dispute, land_farm_issue, police_brutality, political_behavior_process,
+                                   price_increases_tax_policy, removal_politician, social_restrictions, CC_EST, GE_EST,
+                                   PV_NO_SRC, RL_EST, VA_EST, asia, central_america, europe, mena, n_america,
+                                   oceania, s_america, NF, PF]])
+
+
+
+            if pred == 0:
+                outcome = "accomodation"
+            elif pred == 1:
+                outcome = "arrests"
+            elif pred == 2:
+                outcome = "beatings"
+            elif pred == 3:
+                outcome = "crowd dispersal"
+            elif pred == 4:
+                outcome = "ignore"
+            elif pred == 5:
+                outcome = "killings"
+            elif pred == 6:
+                outcome = "shootings"
+            elif pred == 7:
+                outcome = "unknown"
+
+            return outcome
+
+        except:
+            print(f"We don't have enough information {country} for the year {year}. Please try another combination.")
+
+
+
+
+    st.write("Please answer the following questions in order to receive a prediction regarding the state response to this protest.")
+    st.caption("Model has a 70% accuracy score.")
+    country = st.selectbox('Country Name', country_list)
+    year = st.slider('In what year is the protest taking place?', 2006, 2021, step=1)
+    protesterviolence = st.checkbox('Has protester violence been witnessed up to this point?')
+    duration = st.text_input("How many days has this protest been ongoing?", 1)
+    participants_count = st.selectbox('How many participants are expected?', ['unknown','50-99','100-999',
+    '1000-1999','2000-4999','5000-10000','>10000'])
+    st.write('What are the motivating factors behind this protest?')
+    motivation = st.multiselect('Select Motivations', ['labor wage dispute', 'land farm issue',
+     'police brutality', 'political behavior, process', 'price increases, tax policy',
+       'removal of politician', 'social restrictions'])
+
+    if st.button("Generate a Prediction"):
+        outcome = prediction(country, year, protesterviolence, participants_count, duration,
+                       motivation)
+        st.write(f"Consider the possibility that this protest may result in the following state response: {outcome}.")
