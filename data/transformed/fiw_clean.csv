@@ -1,0 +1,3340 @@
+country_name,year,fiw_status
+Abkhazia,2021,PF
+Afghanistan,2021,NF
+Albania,2021,PF
+Algeria,2021,NF
+Andorra,2021,F
+Angola,2021,NF
+Antigua and Barbuda,2021,F
+Argentina,2021,F
+Armenia,2021,PF
+Australia,2021,F
+Austria,2021,F
+Azerbaijan,2021,NF
+Bahamas,2021,F
+Bahrain,2021,NF
+Bangladesh,2021,PF
+Barbados,2021,F
+Belarus,2021,NF
+Belgium,2021,F
+Belize,2021,F
+Benin,2021,PF
+Bhutan,2021,PF
+Bolivia,2021,PF
+Bosnia and Herzegovina,2021,PF
+Botswana,2021,F
+Brazil,2021,F
+Brunei,2021,NF
+Bulgaria,2021,F
+Burkina Faso,2021,PF
+Burundi,2021,NF
+Cabo Verde,2021,F
+Cambodia,2021,NF
+Cameroon,2021,NF
+Canada,2021,F
+Central African Republic,2021,NF
+Chad,2021,NF
+Chile,2021,F
+China,2021,NF
+Colombia,2021,PF
+Comoros,2021,PF
+"Congo, Rep.",2021,NF
+"Congo, Dem. Rep.",2021,NF
+Costa Rica,2021,F
+Cote d'Ivoire,2021,PF
+Crimea,2021,NF
+Croatia,2021,F
+Cuba,2021,NF
+Cyprus,2021,F
+Czech Republic,2021,F
+Denmark,2021,F
+Djibouti,2021,NF
+Dominica,2021,F
+Dominican Republic,2021,PF
+Eastern Donbas,2021,NF
+Ecuador,2021,PF
+Egypt,2021,NF
+El Salvador,2021,PF
+Equatorial Guinea,2021,NF
+Eritrea,2021,NF
+Estonia,2021,F
+Eswatini,2021,NF
+Ethiopia,2021,NF
+Fiji,2021,PF
+Finland,2021,F
+France,2021,F
+Gabon,2021,NF
+Gaza Strip,2021,NF
+Georgia,2021,PF
+Germany,2021,F
+Ghana,2021,F
+Greece,2021,F
+Grenada,2021,F
+Guatemala,2021,PF
+Guinea,2021,PF
+Guinea-Bissau,2021,PF
+Guyana,2021,F
+Haiti,2021,PF
+Honduras,2021,PF
+Hong Kong,2021,PF
+Hungary,2021,PF
+Iceland,2021,F
+India,2021,PF
+Indian Kashmir,2021,NF
+Indonesia,2021,PF
+Iran,2021,NF
+Iraq,2021,NF
+Ireland,2021,F
+Israel,2021,F
+Italy,2021,F
+Jamaica,2021,F
+Japan,2021,F
+Jordan,2021,NF
+Kazakhstan,2021,NF
+Kenya,2021,PF
+Kiribati,2021,F
+Kosovo,2021,PF
+Kuwait,2021,PF
+Kyrgyzstan,2021,NF
+Laos,2021,NF
+Latvia,2021,F
+Lebanon,2021,PF
+Lesotho,2021,PF
+Liberia,2021,PF
+Libya,2021,NF
+Liechtenstein,2021,F
+Lithuania,2021,F
+Luxembourg,2021,F
+Madagascar,2021,PF
+Malawi,2021,PF
+Malaysia,2021,PF
+Maldives,2021,PF
+Mali,2021,NF
+Malta,2021,F
+Marshall Islands,2021,F
+Mauritania,2021,PF
+Mauritius,2021,F
+Mexico,2021,PF
+Micronesia,2021,F
+Moldova,2021,PF
+Monaco,2021,F
+Mongolia,2021,F
+Montenegro,2021,PF
+Morocco,2021,PF
+Mozambique,2021,PF
+Myanmar,2021,NF
+Nagorno-Karabakh,2021,PF
+Namibia,2021,F
+Nauru,2021,F
+Nepal,2021,PF
+Netherlands,2021,F
+New Zealand,2021,F
+Nicaragua,2021,NF
+Niger,2021,PF
+Nigeria,2021,PF
+North Korea,2021,NF
+North Macedonia,2021,PF
+Northern Cyprus,2021,F
+Norway,2021,F
+Oman,2021,NF
+Pakistan,2021,PF
+Pakistani Kashmir,2021,NF
+Palau,2021,F
+Panama,2021,F
+Papua New Guinea,2021,PF
+Paraguay,2021,PF
+Peru,2021,PF
+Philippines,2021,PF
+Poland,2021,F
+Portugal,2021,F
+Qatar,2021,NF
+Romania,2021,F
+Russian Federation,2021,NF
+Rwanda,2021,NF
+Samoa,2021,F
+San Marino,2021,F
+Sao Tome and Principe,2021,F
+Saudi Arabia,2021,NF
+Senegal,2021,PF
+Serbia,2021,PF
+Seychelles,2021,F
+Sierra Leone,2021,PF
+Singapore,2021,PF
+Slovak Republic,2021,F
+Slovenia,2021,F
+Solomon Islands,2021,F
+Somalia,2021,NF
+Somaliland,2021,PF
+South Africa,2021,F
+South Korea,2021,F
+South Ossetia,2021,NF
+South Sudan,2021,NF
+Spain,2021,F
+Sri Lanka,2021,PF
+St. Kitts and Nevis,2021,F
+St. Lucia,2021,F
+St. Vincent and the Grenadines,2021,F
+Sudan,2021,NF
+Suriname,2021,F
+Sweden,2021,F
+Switzerland,2021,F
+Syria,2021,NF
+Taiwan,2021,F
+Tajikistan,2021,NF
+Tanzania,2021,PF
+Thailand,2021,NF
+"Gambia, The",2021,PF
+Tibet,2021,NF
+Timor-Leste,2021,F
+Togo,2021,PF
+Tonga,2021,F
+Transnistria,2021,NF
+Trinidad and Tobago,2021,F
+Tunisia,2021,F
+Turkey,2021,NF
+Turkmenistan,2021,NF
+Tuvalu,2021,F
+Uganda,2021,NF
+Ukraine,2021,PF
+United Arab Emirates,2021,NF
+United Kingdom,2021,F
+United States,2021,F
+Uruguay,2021,F
+Uzbekistan,2021,NF
+Vanuatu,2021,F
+Venezuela,2021,NF
+Vietnam,2021,NF
+West Bank,2021,NF
+Western Sahara,2021,NF
+Yemen,2021,NF
+Zambia,2021,PF
+Zimbabwe,2021,NF
+Abkhazia,2020,PF
+Afghanistan,2020,NF
+Albania,2020,PF
+Algeria,2020,NF
+Andorra,2020,F
+Angola,2020,NF
+Antigua and Barbuda,2020,F
+Argentina,2020,F
+Armenia,2020,PF
+Australia,2020,F
+Austria,2020,F
+Azerbaijan,2020,NF
+Bahamas,2020,F
+Bahrain,2020,NF
+Bangladesh,2020,PF
+Barbados,2020,F
+Belarus,2020,NF
+Belgium,2020,F
+Belize,2020,F
+Benin,2020,PF
+Bhutan,2020,PF
+Bolivia,2020,PF
+Bosnia and Herzegovina,2020,PF
+Botswana,2020,F
+Brazil,2020,F
+Brunei,2020,NF
+Bulgaria,2020,F
+Burkina Faso,2020,PF
+Burundi,2020,NF
+Cabo Verde,2020,F
+Cambodia,2020,NF
+Cameroon,2020,NF
+Canada,2020,F
+Central African Republic,2020,NF
+Chad,2020,NF
+Chile,2020,F
+China,2020,NF
+Colombia,2020,PF
+Comoros,2020,PF
+"Congo, Rep.",2020,NF
+"Congo, Dem. Rep.",2020,NF
+Costa Rica,2020,F
+Cote d'Ivoire,2020,PF
+Crimea,2020,NF
+Croatia,2020,F
+Cuba,2020,NF
+Cyprus,2020,F
+Czech Republic,2020,F
+Denmark,2020,F
+Djibouti,2020,NF
+Dominica,2020,F
+Dominican Republic,2020,PF
+Eastern Donbas,2020,NF
+Ecuador,2020,PF
+Egypt,2020,NF
+El Salvador,2020,PF
+Equatorial Guinea,2020,NF
+Eritrea,2020,NF
+Estonia,2020,F
+Eswatini,2020,NF
+Ethiopia,2020,NF
+Fiji,2020,PF
+Finland,2020,F
+France,2020,F
+Gabon,2020,NF
+Gaza Strip,2020,NF
+Georgia,2020,PF
+Germany,2020,F
+Ghana,2020,F
+Greece,2020,F
+Grenada,2020,F
+Guatemala,2020,PF
+Guinea,2020,PF
+Guinea-Bissau,2020,PF
+Guyana,2020,F
+Haiti,2020,PF
+Honduras,2020,PF
+Hong Kong,2020,PF
+Hungary,2020,PF
+Iceland,2020,F
+India,2020,F
+Indian Kashmir,2020,NF
+Indonesia,2020,PF
+Iran,2020,NF
+Iraq,2020,NF
+Ireland,2020,F
+Israel,2020,F
+Italy,2020,F
+Jamaica,2020,F
+Japan,2020,F
+Jordan,2020,PF
+Kazakhstan,2020,NF
+Kenya,2020,PF
+Kiribati,2020,F
+Kosovo,2020,PF
+Kuwait,2020,PF
+Kyrgyzstan,2020,PF
+Laos,2020,NF
+Latvia,2020,F
+Lebanon,2020,PF
+Lesotho,2020,PF
+Liberia,2020,PF
+Libya,2020,NF
+Liechtenstein,2020,F
+Lithuania,2020,F
+Luxembourg,2020,F
+Madagascar,2020,PF
+Malawi,2020,PF
+Malaysia,2020,PF
+Maldives,2020,PF
+Mali,2020,PF
+Malta,2020,F
+Marshall Islands,2020,F
+Mauritania,2020,PF
+Mauritius,2020,F
+Mexico,2020,PF
+Micronesia,2020,F
+Moldova,2020,PF
+Monaco,2020,F
+Mongolia,2020,F
+Montenegro,2020,PF
+Morocco,2020,PF
+Mozambique,2020,PF
+Myanmar,2020,NF
+Nagorno-Karabakh,2020,PF
+Namibia,2020,F
+Nauru,2020,F
+Nepal,2020,PF
+Netherlands,2020,F
+New Zealand,2020,F
+Nicaragua,2020,NF
+Niger,2020,PF
+Nigeria,2020,PF
+North Korea,2020,NF
+North Macedonia,2020,PF
+Northern Cyprus,2020,F
+Norway,2020,F
+Oman,2020,NF
+Pakistan,2020,PF
+Pakistani Kashmir,2020,NF
+Palau,2020,F
+Panama,2020,F
+Papua New Guinea,2020,PF
+Paraguay,2020,PF
+Peru,2020,F
+Philippines,2020,PF
+Poland,2020,F
+Portugal,2020,F
+Qatar,2020,NF
+Romania,2020,F
+Russian Federation,2020,NF
+Rwanda,2020,NF
+Samoa,2020,F
+San Marino,2020,F
+Sao Tome and Principe,2020,F
+Saudi Arabia,2020,NF
+Senegal,2020,PF
+Serbia,2020,PF
+Seychelles,2020,PF
+Sierra Leone,2020,PF
+Singapore,2020,PF
+Slovak Republic,2020,F
+Slovenia,2020,F
+Solomon Islands,2020,F
+Somalia,2020,NF
+Somaliland,2020,PF
+South Africa,2020,F
+South Korea,2020,F
+South Ossetia,2020,NF
+South Sudan,2020,NF
+Spain,2020,F
+Sri Lanka,2020,PF
+St. Kitts and Nevis,2020,F
+St. Lucia,2020,F
+St. Vincent and the Grenadines,2020,F
+Sudan,2020,NF
+Suriname,2020,F
+Sweden,2020,F
+Switzerland,2020,F
+Syria,2020,NF
+Taiwan,2020,F
+Tajikistan,2020,NF
+Tanzania,2020,PF
+Thailand,2020,PF
+"Gambia, The",2020,PF
+Tibet,2020,NF
+Timor-Leste,2020,F
+Togo,2020,PF
+Tonga,2020,F
+Transnistria,2020,NF
+Trinidad and Tobago,2020,F
+Tunisia,2020,F
+Turkey,2020,NF
+Turkmenistan,2020,NF
+Tuvalu,2020,F
+Uganda,2020,NF
+Ukraine,2020,PF
+United Arab Emirates,2020,NF
+United Kingdom,2020,F
+United States,2020,F
+Uruguay,2020,F
+Uzbekistan,2020,NF
+Vanuatu,2020,F
+Venezuela,2020,NF
+Vietnam,2020,NF
+West Bank,2020,NF
+Western Sahara,2020,NF
+Yemen,2020,NF
+Zambia,2020,PF
+Zimbabwe,2020,PF
+Abkhazia,2019,PF
+Afghanistan,2019,NF
+Albania,2019,PF
+Algeria,2019,NF
+Andorra,2019,F
+Angola,2019,NF
+Antigua and Barbuda,2019,F
+Argentina,2019,F
+Armenia,2019,PF
+Australia,2019,F
+Austria,2019,F
+Azerbaijan,2019,NF
+Bahamas,2019,F
+Bahrain,2019,NF
+Bangladesh,2019,PF
+Barbados,2019,F
+Belarus,2019,NF
+Belgium,2019,F
+Belize,2019,F
+Benin,2019,F
+Bhutan,2019,PF
+Bolivia,2019,PF
+Bosnia and Herzegovina,2019,PF
+Botswana,2019,F
+Brazil,2019,F
+Brunei,2019,NF
+Bulgaria,2019,F
+Burkina Faso,2019,PF
+Burundi,2019,NF
+Cambodia,2019,NF
+Cameroon,2019,NF
+Canada,2019,F
+Cape Verde,2019,F
+Central African Republic,2019,NF
+Chad,2019,NF
+Chile,2019,F
+China,2019,NF
+Colombia,2019,PF
+Comoros,2019,PF
+"Congo, Rep.",2019,NF
+"Congo, Dem. Rep.",2019,NF
+Costa Rica,2019,F
+Cote d'Ivoire,2019,PF
+Crimea,2019,NF
+Croatia,2019,F
+Cuba,2019,NF
+Cyprus,2019,F
+Czech Republic,2019,F
+Denmark,2019,F
+Djibouti,2019,NF
+Dominica,2019,F
+Dominican Republic,2019,PF
+Ecuador,2019,PF
+Egypt,2019,NF
+El Salvador,2019,F
+Equatorial Guinea,2019,NF
+Eritrea,2019,NF
+Estonia,2019,F
+Ethiopia,2019,NF
+Fiji,2019,PF
+Finland,2019,F
+France,2019,F
+Gabon,2019,NF
+Gaza Strip,2019,NF
+Georgia,2019,PF
+Germany,2019,F
+Ghana,2019,F
+Greece,2019,F
+Grenada,2019,F
+Guatemala,2019,PF
+Guinea,2019,PF
+Guinea-Bissau,2019,PF
+Guyana,2019,F
+Haiti,2019,PF
+Honduras,2019,PF
+Hong Kong,2019,PF
+Hungary,2019,PF
+Iceland,2019,F
+India,2019,F
+Indian Kashmir,2019,PF
+Indonesia,2019,PF
+Iran,2019,NF
+Iraq,2019,NF
+Ireland,2019,F
+Israel,2019,F
+Italy,2019,F
+Jamaica,2019,F
+Japan,2019,F
+Jordan,2019,PF
+Kazakhstan,2019,NF
+Kenya,2019,PF
+Kiribati,2019,F
+Kosovo,2019,PF
+Kuwait,2019,PF
+Kyrgyzstan,2019,PF
+Laos,2019,NF
+Latvia,2019,F
+Lebanon,2019,PF
+Lesotho,2019,PF
+Liberia,2019,PF
+Libya,2019,NF
+Liechtenstein,2019,F
+Lithuania,2019,F
+Luxembourg,2019,F
+Macedonia,2019,PF
+Madagascar,2019,PF
+Malawi,2019,PF
+Malaysia,2019,PF
+Maldives,2019,PF
+Mali,2019,PF
+Malta,2019,F
+Marshall Islands,2019,F
+Mauritania,2019,NF
+Mauritius,2019,F
+Mexico,2019,PF
+Micronesia,2019,F
+Moldova,2019,PF
+Monaco,2019,F
+Mongolia,2019,F
+Montenegro,2019,PF
+Morocco,2019,PF
+Mozambique,2019,PF
+Myanmar,2019,PF
+Nagorno-Karabakh,2019,PF
+Namibia,2019,F
+Nauru,2019,F
+Nepal,2019,PF
+Netherlands,2019,F
+New Zealand,2019,F
+Nicaragua,2019,NF
+Niger,2019,PF
+Nigeria,2019,PF
+North Korea,2019,NF
+Northern Cyprus,2019,F
+Norway,2019,F
+Oman,2019,NF
+Pakistan,2019,PF
+Pakistani Kashmir,2019,NF
+Palau,2019,F
+Panama,2019,F
+Papua New Guinea,2019,PF
+Paraguay,2019,PF
+Peru,2019,F
+Philippines,2019,PF
+Poland,2019,F
+Portugal,2019,F
+Qatar,2019,NF
+Romania,2019,F
+Russian Federation,2019,NF
+Rwanda,2019,NF
+Samoa,2019,F
+San Marino,2019,F
+Sao Tome and Principe,2019,F
+Saudi Arabia,2019,NF
+Senegal,2019,F
+Serbia,2019,PF
+Seychelles,2019,PF
+Sierra Leone,2019,PF
+Singapore,2019,PF
+Slovak Republic,2019,F
+Slovenia,2019,F
+Solomon Islands,2019,F
+Somalia,2019,NF
+Somaliland,2019,PF
+South Africa,2019,F
+South Korea,2019,F
+South Ossetia,2019,NF
+South Sudan,2019,NF
+Spain,2019,F
+Sri Lanka,2019,PF
+St. Kitts and Nevis,2019,F
+St. Lucia,2019,F
+St. Vincent and the Grenadines,2019,F
+Sudan,2019,NF
+Suriname,2019,F
+Swaziland,2019,NF
+Sweden,2019,F
+Switzerland,2019,F
+Syria,2019,NF
+Taiwan,2019,F
+Tajikistan,2019,NF
+Tanzania,2019,PF
+Thailand,2019,NF
+"Gambia, The",2019,PF
+Tibet,2019,NF
+Timor-Leste,2019,F
+Togo,2019,PF
+Tonga,2019,F
+Transnistria,2019,NF
+Trinidad and Tobago,2019,F
+Tunisia,2019,F
+Turkey,2019,NF
+Turkmenistan,2019,NF
+Tuvalu,2019,F
+Uganda,2019,NF
+Ukraine,2019,PF
+United Arab Emirates,2019,NF
+United Kingdom,2019,F
+United States,2019,F
+Uruguay,2019,F
+Uzbekistan,2019,NF
+Vanuatu,2019,F
+Venezuela,2019,NF
+Vietnam,2019,NF
+West Bank,2019,NF
+Western Sahara,2019,NF
+Yemen,2019,NF
+Zambia,2019,PF
+Zimbabwe,2019,PF
+Abkhazia,2018,PF
+Afghanistan,2018,NF
+Albania,2018,PF
+Algeria,2018,NF
+Andorra,2018,F
+Angola,2018,NF
+Antigua and Barbuda,2018,F
+Argentina,2018,F
+Armenia,2018,PF
+Australia,2018,F
+Austria,2018,F
+Azerbaijan,2018,NF
+Bahamas,2018,F
+Bahrain,2018,NF
+Bangladesh,2018,PF
+Barbados,2018,F
+Belarus,2018,NF
+Belgium,2018,F
+Belize,2018,F
+Benin,2018,F
+Bhutan,2018,PF
+Bolivia,2018,PF
+Bosnia and Herzegovina,2018,PF
+Botswana,2018,F
+Brazil,2018,F
+Brunei,2018,NF
+Bulgaria,2018,F
+Burkina Faso,2018,PF
+Burundi,2018,NF
+Cambodia,2018,NF
+Cameroon,2018,NF
+Canada,2018,F
+Cape Verde,2018,F
+Central African Republic,2018,NF
+Chad,2018,NF
+Chile,2018,F
+China,2018,NF
+Colombia,2018,PF
+Comoros,2018,PF
+"Congo, Rep.",2018,NF
+"Congo, Dem. Rep.",2018,NF
+Costa Rica,2018,F
+Cote d'Ivoire,2018,PF
+Crimea,2018,NF
+Croatia,2018,F
+Cuba,2018,NF
+Cyprus,2018,F
+Czech Republic,2018,F
+Denmark,2018,F
+Djibouti,2018,NF
+Dominica,2018,F
+Dominican Republic,2018,PF
+Ecuador,2018,PF
+Egypt,2018,NF
+El Salvador,2018,F
+Equatorial Guinea,2018,NF
+Eritrea,2018,NF
+Estonia,2018,F
+Ethiopia,2018,NF
+Fiji,2018,PF
+Finland,2018,F
+France,2018,F
+Gabon,2018,NF
+Gaza Strip,2018,NF
+Georgia,2018,PF
+Germany,2018,F
+Ghana,2018,F
+Greece,2018,F
+Grenada,2018,F
+Guatemala,2018,PF
+Guinea,2018,PF
+Guinea-Bissau,2018,PF
+Guyana,2018,F
+Haiti,2018,PF
+Honduras,2018,PF
+Hong Kong,2018,PF
+Hungary,2018,F
+Iceland,2018,F
+India,2018,F
+Indian Kashmir,2018,PF
+Indonesia,2018,PF
+Iran,2018,NF
+Iraq,2018,NF
+Ireland,2018,F
+Israel,2018,F
+Italy,2018,F
+Jamaica,2018,F
+Japan,2018,F
+Jordan,2018,PF
+Kazakhstan,2018,NF
+Kenya,2018,PF
+Kiribati,2018,F
+Kosovo,2018,PF
+Kuwait,2018,PF
+Kyrgyzstan,2018,PF
+Laos,2018,NF
+Latvia,2018,F
+Lebanon,2018,PF
+Lesotho,2018,PF
+Liberia,2018,PF
+Libya,2018,NF
+Liechtenstein,2018,F
+Lithuania,2018,F
+Luxembourg,2018,F
+Macedonia,2018,PF
+Madagascar,2018,PF
+Malawi,2018,PF
+Malaysia,2018,PF
+Maldives,2018,PF
+Mali,2018,PF
+Malta,2018,F
+Marshall Islands,2018,F
+Mauritania,2018,NF
+Mauritius,2018,F
+Mexico,2018,PF
+Micronesia,2018,F
+Moldova,2018,PF
+Monaco,2018,F
+Mongolia,2018,F
+Montenegro,2018,PF
+Morocco,2018,PF
+Mozambique,2018,PF
+Myanmar,2018,PF
+Nagorno-Karabakh,2018,PF
+Namibia,2018,F
+Nauru,2018,F
+Nepal,2018,PF
+Netherlands,2018,F
+New Zealand,2018,F
+Nicaragua,2018,PF
+Niger,2018,PF
+Nigeria,2018,PF
+North Korea,2018,NF
+Northern Cyprus,2018,F
+Norway,2018,F
+Oman,2018,NF
+Pakistan,2018,PF
+Pakistani Kashmir,2018,NF
+Palau,2018,F
+Panama,2018,F
+Papua New Guinea,2018,PF
+Paraguay,2018,PF
+Peru,2018,F
+Philippines,2018,PF
+Poland,2018,F
+Portugal,2018,F
+Qatar,2018,NF
+Romania,2018,F
+Russian Federation,2018,NF
+Rwanda,2018,NF
+Samoa,2018,F
+San Marino,2018,F
+Sao Tome and Principe,2018,F
+Saudi Arabia,2018,NF
+Senegal,2018,F
+Serbia,2018,F
+Seychelles,2018,PF
+Sierra Leone,2018,PF
+Singapore,2018,PF
+Slovak Republic,2018,F
+Slovenia,2018,F
+Solomon Islands,2018,F
+Somalia,2018,NF
+Somaliland,2018,PF
+South Africa,2018,F
+South Korea,2018,F
+South Ossetia,2018,NF
+South Sudan,2018,NF
+Spain,2018,F
+Sri Lanka,2018,PF
+St. Kitts and Nevis,2018,F
+St. Lucia,2018,F
+St. Vincent and the Grenadines,2018,F
+Sudan,2018,NF
+Suriname,2018,F
+Swaziland,2018,NF
+Sweden,2018,F
+Switzerland,2018,F
+Syria,2018,NF
+Taiwan,2018,F
+Tajikistan,2018,NF
+Tanzania,2018,PF
+Thailand,2018,NF
+"Gambia, The",2018,PF
+Tibet,2018,NF
+Timor-Leste,2018,F
+Togo,2018,PF
+Tonga,2018,F
+Transnistria,2018,NF
+Trinidad and Tobago,2018,F
+Tunisia,2018,F
+Turkey,2018,NF
+Turkmenistan,2018,NF
+Tuvalu,2018,F
+Uganda,2018,PF
+Ukraine,2018,PF
+United Arab Emirates,2018,NF
+United Kingdom,2018,F
+United States,2018,F
+Uruguay,2018,F
+Uzbekistan,2018,NF
+Vanuatu,2018,F
+Venezuela,2018,NF
+Vietnam,2018,NF
+West Bank,2018,NF
+Western Sahara,2018,NF
+Yemen,2018,NF
+Zambia,2018,PF
+Zimbabwe,2018,NF
+Abkhazia,2017,PF
+Afghanistan,2017,NF
+Albania,2017,PF
+Algeria,2017,NF
+Andorra,2017,F
+Angola,2017,NF
+Antigua and Barbuda,2017,F
+Argentina,2017,F
+Armenia,2017,PF
+Australia,2017,F
+Austria,2017,F
+Azerbaijan,2017,NF
+Bahamas,2017,F
+Bahrain,2017,NF
+Bangladesh,2017,PF
+Barbados,2017,F
+Belarus,2017,NF
+Belgium,2017,F
+Belize,2017,F
+Benin,2017,F
+Bhutan,2017,PF
+Bolivia,2017,PF
+Bosnia and Herzegovina,2017,PF
+Botswana,2017,F
+Brazil,2017,F
+Brunei,2017,NF
+Bulgaria,2017,F
+Burkina Faso,2017,PF
+Burundi,2017,NF
+Cambodia,2017,NF
+Cameroon,2017,NF
+Canada,2017,F
+Cape Verde,2017,F
+Central African Republic,2017,NF
+Chad,2017,NF
+Chile,2017,F
+China,2017,NF
+Colombia,2017,PF
+Comoros,2017,PF
+"Congo, Rep.",2017,NF
+"Congo, Dem. Rep.",2017,NF
+Costa Rica,2017,F
+Cote d'Ivoire,2017,PF
+Crimea,2017,NF
+Croatia,2017,F
+Cuba,2017,NF
+Cyprus,2017,F
+Czech Republic,2017,F
+Denmark,2017,F
+Djibouti,2017,NF
+Dominica,2017,F
+Dominican Republic,2017,PF
+Ecuador,2017,PF
+Egypt,2017,NF
+El Salvador,2017,F
+Equatorial Guinea,2017,NF
+Eritrea,2017,NF
+Estonia,2017,F
+Ethiopia,2017,NF
+Fiji,2017,PF
+Finland,2017,F
+France,2017,F
+Gabon,2017,NF
+Gaza Strip,2017,NF
+Georgia,2017,PF
+Germany,2017,F
+Ghana,2017,F
+Greece,2017,F
+Grenada,2017,F
+Guatemala,2017,PF
+Guinea,2017,PF
+Guinea-Bissau,2017,PF
+Guyana,2017,F
+Haiti,2017,PF
+Honduras,2017,PF
+Hong Kong,2017,PF
+Hungary,2017,F
+Iceland,2017,F
+India,2017,F
+Indian Kashmir,2017,PF
+Indonesia,2017,PF
+Iran,2017,NF
+Iraq,2017,NF
+Ireland,2017,F
+Israel,2017,F
+Italy,2017,F
+Jamaica,2017,F
+Japan,2017,F
+Jordan,2017,PF
+Kazakhstan,2017,NF
+Kenya,2017,PF
+Kiribati,2017,F
+Kosovo,2017,PF
+Kuwait,2017,PF
+Kyrgyzstan,2017,PF
+Laos,2017,NF
+Latvia,2017,F
+Lebanon,2017,PF
+Lesotho,2017,PF
+Liberia,2017,PF
+Libya,2017,NF
+Liechtenstein,2017,F
+Lithuania,2017,F
+Luxembourg,2017,F
+Macedonia,2017,PF
+Madagascar,2017,PF
+Malawi,2017,PF
+Malaysia,2017,PF
+Maldives,2017,PF
+Mali,2017,PF
+Malta,2017,F
+Marshall Islands,2017,F
+Mauritania,2017,NF
+Mauritius,2017,F
+Mexico,2017,PF
+Micronesia,2017,F
+Moldova,2017,PF
+Monaco,2017,F
+Mongolia,2017,F
+Montenegro,2017,PF
+Morocco,2017,PF
+Mozambique,2017,PF
+Myanmar,2017,PF
+Nagorno-Karabakh,2017,PF
+Namibia,2017,F
+Nauru,2017,F
+Nepal,2017,PF
+Netherlands,2017,F
+New Zealand,2017,F
+Nicaragua,2017,PF
+Niger,2017,PF
+Nigeria,2017,PF
+North Korea,2017,NF
+Northern Cyprus,2017,F
+Norway,2017,F
+Oman,2017,NF
+Pakistan,2017,PF
+Pakistani Kashmir,2017,NF
+Palau,2017,F
+Panama,2017,F
+Papua New Guinea,2017,PF
+Paraguay,2017,PF
+Peru,2017,F
+Philippines,2017,PF
+Poland,2017,F
+Portugal,2017,F
+Qatar,2017,NF
+Romania,2017,F
+Russian Federation,2017,NF
+Rwanda,2017,NF
+Samoa,2017,F
+San Marino,2017,F
+Sao Tome and Principe,2017,F
+Saudi Arabia,2017,NF
+Senegal,2017,F
+Serbia,2017,F
+Seychelles,2017,PF
+Sierra Leone,2017,PF
+Singapore,2017,PF
+Slovak Republic,2017,F
+Slovenia,2017,F
+Solomon Islands,2017,F
+Somalia,2017,NF
+Somaliland,2017,PF
+South Africa,2017,F
+South Korea,2017,F
+South Ossetia,2017,NF
+South Sudan,2017,NF
+Spain,2017,F
+Sri Lanka,2017,PF
+St. Kitts and Nevis,2017,F
+St. Lucia,2017,F
+St. Vincent and the Grenadines,2017,F
+Sudan,2017,NF
+Suriname,2017,F
+Swaziland,2017,NF
+Sweden,2017,F
+Switzerland,2017,F
+Syria,2017,NF
+Taiwan,2017,F
+Tajikistan,2017,NF
+Tanzania,2017,PF
+Thailand,2017,NF
+"Gambia, The",2017,NF
+Tibet,2017,NF
+Timor-Leste,2017,PF
+Togo,2017,PF
+Tonga,2017,F
+Transnistria,2017,NF
+Trinidad and Tobago,2017,F
+Tunisia,2017,F
+Turkey,2017,PF
+Turkmenistan,2017,NF
+Tuvalu,2017,F
+Uganda,2017,NF
+Ukraine,2017,PF
+United Arab Emirates,2017,NF
+United Kingdom,2017,F
+United States,2017,F
+Uruguay,2017,F
+Uzbekistan,2017,NF
+Vanuatu,2017,F
+Venezuela,2017,NF
+Vietnam,2017,NF
+West Bank,2017,NF
+Western Sahara,2017,NF
+Yemen,2017,NF
+Zambia,2017,PF
+Zimbabwe,2017,PF
+Abkhazia,2016,PF
+Afghanistan,2016,NF
+Albania,2016,PF
+Algeria,2016,NF
+Andorra,2016,F
+Angola,2016,NF
+Antigua and Barbuda,2016,F
+Argentina,2016,F
+Armenia,2016,PF
+Australia,2016,F
+Austria,2016,F
+Azerbaijan,2016,NF
+Bahamas,2016,F
+Bahrain,2016,NF
+Bangladesh,2016,PF
+Barbados,2016,F
+Belarus,2016,NF
+Belgium,2016,F
+Belize,2016,F
+Benin,2016,F
+Bhutan,2016,PF
+Bolivia,2016,PF
+Bosnia and Herzegovina,2016,PF
+Botswana,2016,F
+Brazil,2016,F
+Brunei,2016,NF
+Bulgaria,2016,F
+Burkina Faso,2016,PF
+Burundi,2016,NF
+Cambodia,2016,NF
+Cameroon,2016,NF
+Canada,2016,F
+Cape Verde,2016,F
+Central African Republic,2016,NF
+Chad,2016,NF
+Chile,2016,F
+China,2016,NF
+Colombia,2016,PF
+Comoros,2016,PF
+"Congo, Rep.",2016,NF
+"Congo, Dem. Rep.",2016,NF
+Costa Rica,2016,F
+Cote d'Ivoire,2016,PF
+Crimea,2016,NF
+Croatia,2016,F
+Cuba,2016,NF
+Cyprus,2016,F
+Czech Republic,2016,F
+Denmark,2016,F
+Djibouti,2016,NF
+Dominica,2016,F
+Dominican Republic,2016,PF
+Ecuador,2016,PF
+Egypt,2016,NF
+El Salvador,2016,F
+Equatorial Guinea,2016,NF
+Eritrea,2016,NF
+Estonia,2016,F
+Ethiopia,2016,NF
+Fiji,2016,PF
+Finland,2016,F
+France,2016,F
+Gabon,2016,NF
+Gaza Strip,2016,NF
+Georgia,2016,PF
+Germany,2016,F
+Ghana,2016,F
+Greece,2016,F
+Grenada,2016,F
+Guatemala,2016,PF
+Guinea,2016,PF
+Guinea-Bissau,2016,PF
+Guyana,2016,F
+Haiti,2016,PF
+Honduras,2016,PF
+Hong Kong,2016,PF
+Hungary,2016,F
+Iceland,2016,F
+India,2016,F
+Indian Kashmir,2016,PF
+Indonesia,2016,PF
+Iran,2016,NF
+Iraq,2016,NF
+Ireland,2016,F
+Israel,2016,F
+Italy,2016,F
+Jamaica,2016,F
+Japan,2016,F
+Jordan,2016,NF
+Kazakhstan,2016,NF
+Kenya,2016,PF
+Kiribati,2016,F
+Kosovo,2016,PF
+Kuwait,2016,PF
+Kyrgyzstan,2016,PF
+Laos,2016,NF
+Latvia,2016,F
+Lebanon,2016,PF
+Lesotho,2016,PF
+Liberia,2016,PF
+Libya,2016,NF
+Liechtenstein,2016,F
+Lithuania,2016,F
+Luxembourg,2016,F
+Macedonia,2016,PF
+Madagascar,2016,PF
+Malawi,2016,PF
+Malaysia,2016,PF
+Maldives,2016,PF
+Mali,2016,PF
+Malta,2016,F
+Marshall Islands,2016,F
+Mauritania,2016,NF
+Mauritius,2016,F
+Mexico,2016,PF
+Micronesia,2016,F
+Moldova,2016,PF
+Monaco,2016,F
+Mongolia,2016,F
+Montenegro,2016,PF
+Morocco,2016,PF
+Mozambique,2016,PF
+Myanmar,2016,NF
+Nagorno-Karabakh,2016,PF
+Namibia,2016,F
+Nauru,2016,F
+Nepal,2016,PF
+Netherlands,2016,F
+New Zealand,2016,F
+Nicaragua,2016,PF
+Niger,2016,PF
+Nigeria,2016,PF
+North Korea,2016,NF
+Northern Cyprus,2016,F
+Norway,2016,F
+Oman,2016,NF
+Pakistan,2016,PF
+Pakistani Kashmir,2016,NF
+Palau,2016,F
+Panama,2016,F
+Papua New Guinea,2016,PF
+Paraguay,2016,PF
+Peru,2016,F
+Philippines,2016,PF
+Poland,2016,F
+Portugal,2016,F
+Puerto Rico,2016,F
+Qatar,2016,NF
+Romania,2016,F
+Russian Federation,2016,NF
+Rwanda,2016,NF
+Samoa,2016,F
+San Marino,2016,F
+Sao Tome and Principe,2016,F
+Saudi Arabia,2016,NF
+Senegal,2016,F
+Serbia,2016,F
+Seychelles,2016,PF
+Sierra Leone,2016,PF
+Singapore,2016,PF
+Slovak Republic,2016,F
+Slovenia,2016,F
+Solomon Islands,2016,PF
+Somalia,2016,NF
+Somaliland,2016,PF
+South Africa,2016,F
+South Korea,2016,F
+South Ossetia,2016,NF
+South Sudan,2016,NF
+Spain,2016,F
+Sri Lanka,2016,PF
+St. Kitts and Nevis,2016,F
+St. Lucia,2016,F
+St. Vincent and the Grenadines,2016,F
+Sudan,2016,NF
+Suriname,2016,F
+Swaziland,2016,NF
+Sweden,2016,F
+Switzerland,2016,F
+Syria,2016,NF
+Taiwan,2016,F
+Tajikistan,2016,NF
+Tanzania,2016,PF
+Thailand,2016,NF
+"Gambia, The",2016,NF
+Tibet,2016,NF
+Timor-Leste,2016,PF
+Togo,2016,PF
+Tonga,2016,F
+Transnistria,2016,NF
+Trinidad and Tobago,2016,F
+Tunisia,2016,F
+Turkey,2016,PF
+Turkmenistan,2016,NF
+Tuvalu,2016,F
+Uganda,2016,NF
+Ukraine,2016,PF
+United Arab Emirates,2016,NF
+United Kingdom,2016,F
+United States,2016,F
+Uruguay,2016,F
+Uzbekistan,2016,NF
+Vanuatu,2016,F
+Venezuela,2016,PF
+Vietnam,2016,NF
+West Bank,2016,NF
+Western Sahara,2016,NF
+Yemen,2016,NF
+Zambia,2016,PF
+Zimbabwe,2016,PF
+Abkhazia,2015,PF
+Afghanistan,2015,NF
+Albania,2015,PF
+Algeria,2015,NF
+Andorra,2015,F
+Angola,2015,NF
+Antigua and Barbuda,2015,F
+Argentina,2015,F
+Armenia,2015,PF
+Australia,2015,F
+Austria,2015,F
+Azerbaijan,2015,NF
+Bahamas,2015,F
+Bahrain,2015,NF
+Bangladesh,2015,PF
+Barbados,2015,F
+Belarus,2015,NF
+Belgium,2015,F
+Belize,2015,F
+Benin,2015,F
+Bhutan,2015,PF
+Bolivia,2015,PF
+Bosnia and Herzegovina,2015,PF
+Botswana,2015,F
+Brazil,2015,F
+Brunei,2015,NF
+Bulgaria,2015,F
+Burkina Faso,2015,PF
+Burundi,2015,NF
+Cambodia,2015,NF
+Cameroon,2015,NF
+Canada,2015,F
+Cape Verde,2015,F
+Central African Republic,2015,NF
+Chad,2015,NF
+Chile,2015,F
+China,2015,NF
+Colombia,2015,PF
+Comoros,2015,PF
+"Congo, Rep.",2015,NF
+"Congo, Dem. Rep.",2015,NF
+Costa Rica,2015,F
+Cote d'Ivoire,2015,PF
+Crimea,2015,NF
+Croatia,2015,F
+Cuba,2015,NF
+Cyprus,2015,F
+Czech Republic,2015,F
+Denmark,2015,F
+Djibouti,2015,NF
+Dominica,2015,F
+Dominican Republic,2015,F
+Ecuador,2015,PF
+Egypt,2015,NF
+El Salvador,2015,F
+Equatorial Guinea,2015,NF
+Eritrea,2015,NF
+Estonia,2015,F
+Ethiopia,2015,NF
+Fiji,2015,PF
+Finland,2015,F
+France,2015,F
+Gabon,2015,NF
+Gaza Strip,2015,NF
+Georgia,2015,PF
+Germany,2015,F
+Ghana,2015,F
+Greece,2015,F
+Grenada,2015,F
+Guatemala,2015,PF
+Guinea,2015,PF
+Guinea-Bissau,2015,PF
+Guyana,2015,F
+Haiti,2015,PF
+Honduras,2015,PF
+Hong Kong,2015,PF
+Hungary,2015,F
+Iceland,2015,F
+India,2015,F
+Indian Kashmir,2015,PF
+Indonesia,2015,PF
+Iran,2015,NF
+Iraq,2015,NF
+Ireland,2015,F
+Israel,2015,F
+Italy,2015,F
+Jamaica,2015,F
+Japan,2015,F
+Jordan,2015,NF
+Kazakhstan,2015,NF
+Kenya,2015,PF
+Kiribati,2015,F
+Kosovo,2015,PF
+Kuwait,2015,PF
+Kyrgyzstan,2015,PF
+Laos,2015,NF
+Latvia,2015,F
+Lebanon,2015,PF
+Lesotho,2015,F
+Liberia,2015,PF
+Libya,2015,NF
+Liechtenstein,2015,F
+Lithuania,2015,F
+Luxembourg,2015,F
+Macedonia,2015,PF
+Madagascar,2015,PF
+Malawi,2015,PF
+Malaysia,2015,PF
+Maldives,2015,PF
+Mali,2015,PF
+Malta,2015,F
+Marshall Islands,2015,F
+Mauritania,2015,NF
+Mauritius,2015,F
+Mexico,2015,PF
+Micronesia,2015,F
+Moldova,2015,PF
+Monaco,2015,F
+Mongolia,2015,F
+Montenegro,2015,F
+Morocco,2015,PF
+Mozambique,2015,PF
+Myanmar,2015,NF
+Nagorno-Karabakh,2015,PF
+Namibia,2015,F
+Nauru,2015,F
+Nepal,2015,PF
+Netherlands,2015,F
+New Zealand,2015,F
+Nicaragua,2015,PF
+Niger,2015,PF
+Nigeria,2015,PF
+North Korea,2015,NF
+Northern Cyprus,2015,F
+Norway,2015,F
+Oman,2015,NF
+Pakistan,2015,PF
+Pakistani Kashmir,2015,NF
+Palau,2015,F
+Panama,2015,F
+Papua New Guinea,2015,PF
+Paraguay,2015,PF
+Peru,2015,F
+Philippines,2015,PF
+Poland,2015,F
+Portugal,2015,F
+Puerto Rico,2015,F
+Qatar,2015,NF
+Romania,2015,F
+Russian Federation,2015,NF
+Rwanda,2015,NF
+Samoa,2015,F
+San Marino,2015,F
+Sao Tome and Principe,2015,F
+Saudi Arabia,2015,NF
+Senegal,2015,F
+Serbia,2015,F
+Seychelles,2015,PF
+Sierra Leone,2015,PF
+Singapore,2015,PF
+Slovak Republic,2015,F
+Slovenia,2015,F
+Solomon Islands,2015,PF
+Somalia,2015,NF
+Somaliland,2015,PF
+South Africa,2015,F
+South Korea,2015,F
+South Ossetia,2015,NF
+South Sudan,2015,NF
+Spain,2015,F
+Sri Lanka,2015,PF
+St. Kitts and Nevis,2015,F
+St. Lucia,2015,F
+St. Vincent and the Grenadines,2015,F
+Sudan,2015,NF
+Suriname,2015,F
+Swaziland,2015,NF
+Sweden,2015,F
+Switzerland,2015,F
+Syria,2015,NF
+Taiwan,2015,F
+Tajikistan,2015,NF
+Tanzania,2015,PF
+Thailand,2015,NF
+"Gambia, The",2015,NF
+Tibet,2015,NF
+Timor-Leste,2015,PF
+Togo,2015,PF
+Tonga,2015,F
+Transnistria,2015,NF
+Trinidad and Tobago,2015,F
+Tunisia,2015,F
+Turkey,2015,PF
+Turkmenistan,2015,NF
+Tuvalu,2015,F
+Uganda,2015,NF
+Ukraine,2015,PF
+United Arab Emirates,2015,NF
+United Kingdom,2015,F
+United States,2015,F
+Uruguay,2015,F
+Uzbekistan,2015,NF
+Vanuatu,2015,F
+Venezuela,2015,PF
+Vietnam,2015,NF
+West Bank,2015,NF
+Western Sahara,2015,NF
+Yemen,2015,NF
+Zambia,2015,PF
+Zimbabwe,2015,NF
+Abkhazia,2014,PF
+Afghanistan,2014,NF
+Albania,2014,PF
+Algeria,2014,NF
+Andorra,2014,F
+Angola,2014,NF
+Antigua and Barbuda,2014,F
+Argentina,2014,F
+Armenia,2014,PF
+Australia,2014,F
+Austria,2014,F
+Azerbaijan,2014,NF
+Bahamas,2014,F
+Bahrain,2014,NF
+Bangladesh,2014,PF
+Barbados,2014,F
+Belarus,2014,NF
+Belgium,2014,F
+Belize,2014,F
+Benin,2014,F
+Bhutan,2014,PF
+Bolivia,2014,PF
+Bosnia and Herzegovina,2014,PF
+Botswana,2014,F
+Brazil,2014,F
+Brunei,2014,NF
+Bulgaria,2014,F
+Burkina Faso,2014,PF
+Burundi,2014,PF
+Cambodia,2014,NF
+Cameroon,2014,NF
+Canada,2014,F
+Cape Verde,2014,F
+Central African Republic,2014,NF
+Chad,2014,NF
+Chile,2014,F
+China,2014,NF
+Colombia,2014,PF
+Comoros,2014,PF
+"Congo, Rep.",2014,NF
+"Congo, Dem. Rep.",2014,NF
+Costa Rica,2014,F
+Cote d'Ivoire,2014,PF
+Croatia,2014,F
+Cuba,2014,NF
+Cyprus,2014,F
+Czech Republic,2014,F
+Denmark,2014,F
+Djibouti,2014,NF
+Dominica,2014,F
+Dominican Republic,2014,F
+Ecuador,2014,PF
+Egypt,2014,NF
+El Salvador,2014,F
+Equatorial Guinea,2014,NF
+Eritrea,2014,NF
+Estonia,2014,F
+Ethiopia,2014,NF
+Fiji,2014,PF
+Finland,2014,F
+France,2014,F
+Gabon,2014,NF
+Gaza Strip,2014,NF
+Georgia,2014,PF
+Germany,2014,F
+Ghana,2014,F
+Greece,2014,F
+Grenada,2014,F
+Guatemala,2014,PF
+Guinea,2014,PF
+Guinea-Bissau,2014,NF
+Guyana,2014,F
+Haiti,2014,PF
+Honduras,2014,PF
+Hong Kong,2014,PF
+Hungary,2014,F
+Iceland,2014,F
+India,2014,F
+Indian Kashmir,2014,PF
+Indonesia,2014,PF
+Iran,2014,NF
+Iraq,2014,NF
+Ireland,2014,F
+Israel,2014,F
+Italy,2014,F
+Jamaica,2014,F
+Japan,2014,F
+Jordan,2014,NF
+Kazakhstan,2014,NF
+Kenya,2014,PF
+Kiribati,2014,F
+Kosovo,2014,PF
+Kuwait,2014,PF
+Kyrgyzstan,2014,PF
+Laos,2014,NF
+Latvia,2014,F
+Lebanon,2014,PF
+Lesotho,2014,F
+Liberia,2014,PF
+Libya,2014,PF
+Liechtenstein,2014,F
+Lithuania,2014,F
+Luxembourg,2014,F
+Macedonia,2014,PF
+Madagascar,2014,PF
+Malawi,2014,PF
+Malaysia,2014,PF
+Maldives,2014,PF
+Mali,2014,PF
+Malta,2014,F
+Marshall Islands,2014,F
+Mauritania,2014,NF
+Mauritius,2014,F
+Mexico,2014,PF
+Micronesia,2014,F
+Moldova,2014,PF
+Monaco,2014,F
+Mongolia,2014,F
+Montenegro,2014,F
+Morocco,2014,PF
+Mozambique,2014,PF
+Myanmar,2014,NF
+Nagorno-Karabakh,2014,PF
+Namibia,2014,F
+Nauru,2014,F
+Nepal,2014,PF
+Netherlands,2014,F
+New Zealand,2014,F
+Nicaragua,2014,PF
+Niger,2014,PF
+Nigeria,2014,PF
+North Korea,2014,NF
+Northern Cyprus,2014,F
+Norway,2014,F
+Oman,2014,NF
+Pakistan,2014,PF
+Pakistani Kashmir,2014,NF
+Palau,2014,F
+Panama,2014,F
+Papua New Guinea,2014,PF
+Paraguay,2014,PF
+Peru,2014,F
+Philippines,2014,PF
+Poland,2014,F
+Portugal,2014,F
+Puerto Rico,2014,F
+Qatar,2014,NF
+Romania,2014,F
+Russian Federation,2014,NF
+Rwanda,2014,NF
+Samoa,2014,F
+San Marino,2014,F
+Sao Tome and Principe,2014,F
+Saudi Arabia,2014,NF
+Senegal,2014,F
+Serbia,2014,F
+Seychelles,2014,PF
+Sierra Leone,2014,PF
+Singapore,2014,PF
+Slovak Republic,2014,F
+Slovenia,2014,F
+Solomon Islands,2014,PF
+Somalia,2014,NF
+Somaliland,2014,PF
+South Africa,2014,F
+South Korea,2014,F
+South Ossetia,2014,NF
+South Sudan,2014,NF
+Spain,2014,F
+Sri Lanka,2014,PF
+St. Kitts and Nevis,2014,F
+St. Lucia,2014,F
+St. Vincent and the Grenadines,2014,F
+Sudan,2014,NF
+Suriname,2014,F
+Swaziland,2014,NF
+Sweden,2014,F
+Switzerland,2014,F
+Syria,2014,NF
+Taiwan,2014,F
+Tajikistan,2014,NF
+Tanzania,2014,PF
+Thailand,2014,PF
+"Gambia, The",2014,NF
+Tibet,2014,NF
+Timor-Leste,2014,PF
+Togo,2014,PF
+Tonga,2014,F
+Transnistria,2014,NF
+Trinidad and Tobago,2014,F
+Tunisia,2014,PF
+Turkey,2014,PF
+Turkmenistan,2014,NF
+Tuvalu,2014,F
+Uganda,2014,PF
+Ukraine,2014,PF
+United Arab Emirates,2014,NF
+United Kingdom,2014,F
+United States,2014,F
+Uruguay,2014,F
+Uzbekistan,2014,NF
+Vanuatu,2014,F
+Venezuela,2014,PF
+Vietnam,2014,NF
+West Bank,2014,NF
+Western Sahara,2014,NF
+Yemen,2014,NF
+Zambia,2014,PF
+Zimbabwe,2014,NF
+Abkhazia,2013,PF
+Afghanistan,2013,NF
+Albania,2013,PF
+Algeria,2013,NF
+Andorra,2013,F
+Angola,2013,NF
+Antigua and Barbuda,2013,F
+Argentina,2013,F
+Armenia,2013,PF
+Australia,2013,F
+Austria,2013,F
+Azerbaijan,2013,NF
+Bahamas,2013,F
+Bahrain,2013,NF
+Bangladesh,2013,PF
+Barbados,2013,F
+Belarus,2013,NF
+Belgium,2013,F
+Belize,2013,F
+Benin,2013,F
+Bhutan,2013,PF
+Bolivia,2013,PF
+Bosnia and Herzegovina,2013,PF
+Botswana,2013,F
+Brazil,2013,F
+Brunei,2013,NF
+Bulgaria,2013,F
+Burkina Faso,2013,PF
+Burundi,2013,PF
+Cambodia,2013,NF
+Cameroon,2013,NF
+Canada,2013,F
+Cape Verde,2013,F
+Central African Republic,2013,PF
+Chad,2013,NF
+Chile,2013,F
+China,2013,NF
+Colombia,2013,PF
+Comoros,2013,PF
+"Congo, Rep.",2013,NF
+"Congo, Dem. Rep.",2013,NF
+Costa Rica,2013,F
+Cote d'Ivoire,2013,PF
+Croatia,2013,F
+Cuba,2013,NF
+Cyprus,2013,F
+Czech Republic,2013,F
+Denmark,2013,F
+Djibouti,2013,NF
+Dominica,2013,F
+Dominican Republic,2013,F
+Ecuador,2013,PF
+Egypt,2013,PF
+El Salvador,2013,F
+Equatorial Guinea,2013,NF
+Eritrea,2013,NF
+Estonia,2013,F
+Ethiopia,2013,NF
+Fiji,2013,PF
+Finland,2013,F
+France,2013,F
+Gabon,2013,NF
+Gaza Strip,2013,NF
+Georgia,2013,PF
+Germany,2013,F
+Ghana,2013,F
+Greece,2013,F
+Grenada,2013,F
+Guatemala,2013,PF
+Guinea,2013,PF
+Guinea-Bissau,2013,NF
+Guyana,2013,F
+Haiti,2013,PF
+Honduras,2013,PF
+Hong Kong,2013,PF
+Hungary,2013,F
+Iceland,2013,F
+India,2013,F
+Indian Kashmir,2013,PF
+Indonesia,2013,F
+Iran,2013,NF
+Iraq,2013,NF
+Ireland,2013,F
+Israel,2013,F
+Italy,2013,F
+Jamaica,2013,F
+Japan,2013,F
+Jordan,2013,NF
+Kazakhstan,2013,NF
+Kenya,2013,PF
+Kiribati,2013,F
+Kosovo,2013,PF
+Kuwait,2013,PF
+Kyrgyzstan,2013,PF
+Laos,2013,NF
+Latvia,2013,F
+Lebanon,2013,PF
+Lesotho,2013,F
+Liberia,2013,PF
+Libya,2013,PF
+Liechtenstein,2013,F
+Lithuania,2013,F
+Luxembourg,2013,F
+Macedonia,2013,PF
+Madagascar,2013,PF
+Malawi,2013,PF
+Malaysia,2013,PF
+Maldives,2013,PF
+Mali,2013,NF
+Malta,2013,F
+Marshall Islands,2013,F
+Mauritania,2013,NF
+Mauritius,2013,F
+Mexico,2013,PF
+Micronesia,2013,F
+Moldova,2013,PF
+Monaco,2013,F
+Mongolia,2013,F
+Montenegro,2013,F
+Morocco,2013,PF
+Mozambique,2013,PF
+Myanmar,2013,NF
+Nagorno-Karabakh,2013,PF
+Namibia,2013,F
+Nauru,2013,F
+Nepal,2013,PF
+Netherlands,2013,F
+New Zealand,2013,F
+Nicaragua,2013,PF
+Niger,2013,PF
+Nigeria,2013,PF
+North Korea,2013,NF
+Northern Cyprus,2013,F
+Norway,2013,F
+Oman,2013,NF
+Pakistan,2013,PF
+Pakistani Kashmir,2013,NF
+Palau,2013,F
+Panama,2013,F
+Papua New Guinea,2013,PF
+Paraguay,2013,PF
+Peru,2013,F
+Philippines,2013,PF
+Poland,2013,F
+Portugal,2013,F
+Puerto Rico,2013,F
+Qatar,2013,NF
+Romania,2013,F
+Russian Federation,2013,NF
+Rwanda,2013,NF
+Samoa,2013,F
+San Marino,2013,F
+Sao Tome and Principe,2013,F
+Saudi Arabia,2013,NF
+Senegal,2013,F
+Serbia,2013,F
+Seychelles,2013,PF
+Sierra Leone,2013,F
+Singapore,2013,PF
+Slovak Republic,2013,F
+Slovenia,2013,F
+Solomon Islands,2013,PF
+Somalia,2013,NF
+Somaliland,2013,PF
+South Africa,2013,F
+South Korea,2013,F
+South Ossetia,2013,NF
+South Sudan,2013,NF
+Spain,2013,F
+Sri Lanka,2013,PF
+St. Kitts and Nevis,2013,F
+St. Lucia,2013,F
+St. Vincent and the Grenadines,2013,F
+Sudan,2013,NF
+Suriname,2013,F
+Swaziland,2013,NF
+Sweden,2013,F
+Switzerland,2013,F
+Syria,2013,NF
+Taiwan,2013,F
+Tajikistan,2013,NF
+Tanzania,2013,PF
+Thailand,2013,PF
+"Gambia, The",2013,NF
+Tibet,2013,NF
+Timor-Leste,2013,PF
+Togo,2013,PF
+Tonga,2013,F
+Transnistria,2013,NF
+Trinidad and Tobago,2013,F
+Tunisia,2013,PF
+Turkey,2013,PF
+Turkmenistan,2013,NF
+Tuvalu,2013,F
+Uganda,2013,PF
+Ukraine,2013,PF
+United Arab Emirates,2013,NF
+United Kingdom,2013,F
+United States,2013,F
+Uruguay,2013,F
+Uzbekistan,2013,NF
+Vanuatu,2013,F
+Venezuela,2013,PF
+Vietnam,2013,NF
+West Bank,2013,NF
+Western Sahara,2013,NF
+Yemen,2013,NF
+Zambia,2013,PF
+Zimbabwe,2013,NF
+Abkhazia,2012,PF
+Afghanistan,2012,NF
+Albania,2012,PF
+Algeria,2012,NF
+Andorra,2012,F
+Angola,2012,NF
+Antigua and Barbuda,2012,F
+Argentina,2012,F
+Armenia,2012,PF
+Australia,2012,F
+Austria,2012,F
+Azerbaijan,2012,NF
+Bahamas,2012,F
+Bahrain,2012,NF
+Bangladesh,2012,PF
+Barbados,2012,F
+Belarus,2012,NF
+Belgium,2012,F
+Belize,2012,F
+Benin,2012,F
+Bhutan,2012,PF
+Bolivia,2012,PF
+Bosnia and Herzegovina,2012,PF
+Botswana,2012,F
+Brazil,2012,F
+Brunei,2012,NF
+Bulgaria,2012,F
+Burkina Faso,2012,PF
+Burundi,2012,PF
+Cambodia,2012,NF
+Cameroon,2012,NF
+Canada,2012,F
+Cape Verde,2012,F
+Central African Republic,2012,PF
+Chad,2012,NF
+Chile,2012,F
+China,2012,NF
+Colombia,2012,PF
+Comoros,2012,PF
+"Congo, Rep.",2012,NF
+"Congo, Dem. Rep.",2012,NF
+Costa Rica,2012,F
+Cote d'Ivoire,2012,NF
+Croatia,2012,F
+Cuba,2012,NF
+Cyprus,2012,F
+Czech Republic,2012,F
+Denmark,2012,F
+Djibouti,2012,NF
+Dominica,2012,F
+Dominican Republic,2012,F
+Ecuador,2012,PF
+Egypt,2012,NF
+El Salvador,2012,F
+Equatorial Guinea,2012,NF
+Eritrea,2012,NF
+Estonia,2012,F
+Ethiopia,2012,NF
+Fiji,2012,PF
+Finland,2012,F
+France,2012,F
+Gabon,2012,NF
+Gaza Strip,2012,NF
+Georgia,2012,PF
+Germany,2012,F
+Ghana,2012,F
+Greece,2012,F
+Grenada,2012,F
+Guatemala,2012,PF
+Guinea,2012,PF
+Guinea-Bissau,2012,PF
+Guyana,2012,F
+Haiti,2012,PF
+Honduras,2012,PF
+Hong Kong,2012,PF
+Hungary,2012,F
+Iceland,2012,F
+India,2012,F
+Indian Kashmir,2012,PF
+Indonesia,2012,F
+Iran,2012,NF
+Iraq,2012,NF
+Ireland,2012,F
+Israel,2012,F
+Italy,2012,F
+Jamaica,2012,F
+Japan,2012,F
+Jordan,2012,NF
+Kazakhstan,2012,NF
+Kenya,2012,PF
+Kiribati,2012,F
+Kosovo,2012,PF
+Kuwait,2012,PF
+Kyrgyzstan,2012,PF
+Laos,2012,NF
+Latvia,2012,F
+Lebanon,2012,PF
+Lesotho,2012,PF
+Liberia,2012,PF
+Libya,2012,NF
+Liechtenstein,2012,F
+Lithuania,2012,F
+Luxembourg,2012,F
+Macedonia,2012,PF
+Madagascar,2012,PF
+Malawi,2012,PF
+Malaysia,2012,PF
+Maldives,2012,PF
+Mali,2012,F
+Malta,2012,F
+Marshall Islands,2012,F
+Mauritania,2012,NF
+Mauritius,2012,F
+Mexico,2012,PF
+Micronesia,2012,F
+Moldova,2012,PF
+Monaco,2012,F
+Mongolia,2012,F
+Montenegro,2012,F
+Morocco,2012,PF
+Mozambique,2012,PF
+Myanmar,2012,NF
+Nagorno-Karabakh,2012,NF
+Namibia,2012,F
+Nauru,2012,F
+Nepal,2012,PF
+Netherlands,2012,F
+New Zealand,2012,F
+Nicaragua,2012,PF
+Niger,2012,PF
+Nigeria,2012,PF
+North Korea,2012,NF
+Northern Cyprus,2012,F
+Norway,2012,F
+Oman,2012,NF
+Pakistan,2012,PF
+Pakistani Kashmir,2012,NF
+Palau,2012,F
+Panama,2012,F
+Papua New Guinea,2012,PF
+Paraguay,2012,PF
+Peru,2012,F
+Philippines,2012,PF
+Poland,2012,F
+Portugal,2012,F
+Puerto Rico,2012,F
+Qatar,2012,NF
+Romania,2012,F
+Russian Federation,2012,NF
+Rwanda,2012,NF
+Samoa,2012,F
+San Marino,2012,F
+Sao Tome and Principe,2012,F
+Saudi Arabia,2012,NF
+Senegal,2012,PF
+Serbia,2012,F
+Seychelles,2012,PF
+Sierra Leone,2012,PF
+Singapore,2012,PF
+Slovak Republic,2012,F
+Slovenia,2012,F
+Solomon Islands,2012,PF
+Somalia,2012,NF
+Somaliland,2012,PF
+South Africa,2012,F
+South Korea,2012,F
+South Ossetia,2012,NF
+South Sudan,2012,NF
+Spain,2012,F
+Sri Lanka,2012,PF
+St. Kitts and Nevis,2012,F
+St. Lucia,2012,F
+St. Vincent and the Grenadines,2012,F
+Sudan,2012,NF
+Suriname,2012,F
+Swaziland,2012,NF
+Sweden,2012,F
+Switzerland,2012,F
+Syria,2012,NF
+Taiwan,2012,F
+Tajikistan,2012,NF
+Tanzania,2012,PF
+Thailand,2012,PF
+"Gambia, The",2012,NF
+Tibet,2012,NF
+Timor-Leste,2012,PF
+Togo,2012,PF
+Tonga,2012,PF
+Transnistria,2012,NF
+Trinidad and Tobago,2012,F
+Tunisia,2012,PF
+Turkey,2012,PF
+Turkmenistan,2012,NF
+Tuvalu,2012,F
+Uganda,2012,PF
+Ukraine,2012,PF
+United Arab Emirates,2012,NF
+United Kingdom,2012,F
+United States,2012,F
+Uruguay,2012,F
+Uzbekistan,2012,NF
+Vanuatu,2012,F
+Venezuela,2012,PF
+Vietnam,2012,NF
+West Bank,2012,NF
+Western Sahara,2012,NF
+Yemen,2012,NF
+Zambia,2012,PF
+Zimbabwe,2012,NF
+Abkhazia,2011,PF
+Afghanistan,2011,NF
+Albania,2011,PF
+Algeria,2011,NF
+Andorra,2011,F
+Angola,2011,NF
+Antigua and Barbuda,2011,F
+Argentina,2011,F
+Armenia,2011,PF
+Australia,2011,F
+Austria,2011,F
+Azerbaijan,2011,NF
+Bahamas,2011,F
+Bahrain,2011,NF
+Bangladesh,2011,PF
+Barbados,2011,F
+Belarus,2011,NF
+Belgium,2011,F
+Belize,2011,F
+Benin,2011,F
+Bhutan,2011,PF
+Bolivia,2011,PF
+Bosnia and Herzegovina,2011,PF
+Botswana,2011,F
+Brazil,2011,F
+Brunei,2011,NF
+Bulgaria,2011,F
+Burkina Faso,2011,PF
+Burundi,2011,PF
+Cambodia,2011,NF
+Cameroon,2011,NF
+Canada,2011,F
+Cape Verde,2011,F
+Central African Republic,2011,PF
+Chad,2011,NF
+Chile,2011,F
+China,2011,NF
+Colombia,2011,PF
+Comoros,2011,PF
+"Congo, Rep.",2011,NF
+"Congo, Dem. Rep.",2011,NF
+Costa Rica,2011,F
+Cote d'Ivoire,2011,NF
+Croatia,2011,F
+Cuba,2011,NF
+Cyprus,2011,F
+Czech Republic,2011,F
+Denmark,2011,F
+Djibouti,2011,NF
+Dominica,2011,F
+Dominican Republic,2011,F
+Ecuador,2011,PF
+Egypt,2011,NF
+El Salvador,2011,F
+Equatorial Guinea,2011,NF
+Eritrea,2011,NF
+Estonia,2011,F
+Ethiopia,2011,NF
+Fiji,2011,PF
+Finland,2011,F
+France,2011,F
+Gabon,2011,NF
+Gaza Strip,2011,NF
+Georgia,2011,PF
+Germany,2011,F
+Ghana,2011,F
+Greece,2011,F
+Grenada,2011,F
+Guatemala,2011,PF
+Guinea,2011,PF
+Guinea-Bissau,2011,PF
+Guyana,2011,F
+Haiti,2011,PF
+Honduras,2011,PF
+Hong Kong,2011,PF
+Hungary,2011,F
+Iceland,2011,F
+India,2011,F
+Indian Kashmir,2011,PF
+Indonesia,2011,F
+Iran,2011,NF
+Iraq,2011,NF
+Ireland,2011,F
+Israel,2011,F
+Italy,2011,F
+Jamaica,2011,F
+Japan,2011,F
+Jordan,2011,NF
+Kazakhstan,2011,NF
+Kenya,2011,PF
+Kiribati,2011,F
+Kosovo,2011,PF
+Kuwait,2011,PF
+Kyrgyzstan,2011,PF
+Laos,2011,NF
+Latvia,2011,F
+Lebanon,2011,PF
+Lesotho,2011,PF
+Liberia,2011,PF
+Libya,2011,NF
+Liechtenstein,2011,F
+Lithuania,2011,F
+Luxembourg,2011,F
+Macedonia,2011,PF
+Madagascar,2011,PF
+Malawi,2011,PF
+Malaysia,2011,PF
+Maldives,2011,PF
+Mali,2011,F
+Malta,2011,F
+Marshall Islands,2011,F
+Mauritania,2011,NF
+Mauritius,2011,F
+Mexico,2011,PF
+Micronesia,2011,F
+Moldova,2011,PF
+Monaco,2011,F
+Mongolia,2011,F
+Montenegro,2011,F
+Morocco,2011,PF
+Mozambique,2011,PF
+Myanmar,2011,NF
+Nagorno-Karabakh,2011,NF
+Namibia,2011,F
+Nauru,2011,F
+Nepal,2011,PF
+Netherlands,2011,F
+New Zealand,2011,F
+Nicaragua,2011,PF
+Niger,2011,PF
+Nigeria,2011,PF
+North Korea,2011,NF
+Northern Cyprus,2011,F
+Norway,2011,F
+Oman,2011,NF
+Pakistan,2011,PF
+Pakistani Kashmir,2011,NF
+Palau,2011,F
+Panama,2011,F
+Papua New Guinea,2011,PF
+Paraguay,2011,PF
+Peru,2011,F
+Philippines,2011,PF
+Poland,2011,F
+Portugal,2011,F
+Puerto Rico,2011,F
+Qatar,2011,NF
+Romania,2011,F
+Russian Federation,2011,NF
+Rwanda,2011,NF
+Samoa,2011,F
+San Marino,2011,F
+Sao Tome and Principe,2011,F
+Saudi Arabia,2011,NF
+Senegal,2011,PF
+Serbia,2011,F
+Seychelles,2011,PF
+Sierra Leone,2011,PF
+Singapore,2011,PF
+Slovak Republic,2011,F
+Slovenia,2011,F
+Solomon Islands,2011,PF
+Somalia,2011,NF
+Somaliland,2011,PF
+South Africa,2011,F
+South Korea,2011,F
+South Ossetia,2011,NF
+Spain,2011,F
+Sri Lanka,2011,PF
+St. Kitts and Nevis,2011,F
+St. Lucia,2011,F
+St. Vincent and the Grenadines,2011,F
+Sudan,2011,NF
+Suriname,2011,F
+Swaziland,2011,NF
+Sweden,2011,F
+Switzerland,2011,F
+Syria,2011,NF
+Taiwan,2011,F
+Tajikistan,2011,NF
+Tanzania,2011,PF
+Thailand,2011,PF
+"Gambia, The",2011,PF
+Tibet,2011,NF
+Timor-Leste,2011,PF
+Togo,2011,PF
+Tonga,2011,PF
+Transnistria,2011,NF
+Trinidad and Tobago,2011,F
+Tunisia,2011,NF
+Turkey,2011,PF
+Turkmenistan,2011,NF
+Tuvalu,2011,F
+Uganda,2011,PF
+Ukraine,2011,PF
+United Arab Emirates,2011,NF
+United Kingdom,2011,F
+United States,2011,F
+Uruguay,2011,F
+Uzbekistan,2011,NF
+Vanuatu,2011,F
+Venezuela,2011,PF
+Vietnam,2011,NF
+West Bank,2011,NF
+Western Sahara,2011,NF
+Yemen,2011,NF
+Zambia,2011,PF
+Zimbabwe,2011,NF
+Abkhazia,2010,PF
+Afghanistan,2010,NF
+Albania,2010,PF
+Algeria,2010,NF
+Andorra,2010,F
+Angola,2010,NF
+Antigua and Barbuda,2010,F
+Argentina,2010,F
+Armenia,2010,PF
+Australia,2010,F
+Austria,2010,F
+Azerbaijan,2010,NF
+Bahamas,2010,F
+Bahrain,2010,NF
+Bangladesh,2010,PF
+Barbados,2010,F
+Belarus,2010,NF
+Belgium,2010,F
+Belize,2010,F
+Benin,2010,F
+Bhutan,2010,PF
+Bolivia,2010,PF
+Bosnia and Herzegovina,2010,PF
+Botswana,2010,F
+Brazil,2010,F
+Brunei,2010,NF
+Bulgaria,2010,F
+Burkina Faso,2010,PF
+Burundi,2010,PF
+Cambodia,2010,NF
+Cameroon,2010,NF
+Canada,2010,F
+Cape Verde,2010,F
+Central African Republic,2010,PF
+Chad,2010,NF
+Chile,2010,F
+China,2010,NF
+Colombia,2010,PF
+Comoros,2010,PF
+"Congo, Rep.",2010,NF
+"Congo, Dem. Rep.",2010,NF
+Costa Rica,2010,F
+Cote d'Ivoire,2010,NF
+Croatia,2010,F
+Cuba,2010,NF
+Cyprus,2010,F
+Czech Republic,2010,F
+Denmark,2010,F
+Djibouti,2010,PF
+Dominica,2010,F
+Dominican Republic,2010,F
+Ecuador,2010,PF
+Egypt,2010,NF
+El Salvador,2010,F
+Equatorial Guinea,2010,NF
+Eritrea,2010,NF
+Estonia,2010,F
+Ethiopia,2010,PF
+Fiji,2010,PF
+Finland,2010,F
+France,2010,F
+Gabon,2010,NF
+Georgia,2010,PF
+Germany,2010,F
+Ghana,2010,F
+Greece,2010,F
+Grenada,2010,F
+Guatemala,2010,PF
+Guinea,2010,NF
+Guinea-Bissau,2010,PF
+Guyana,2010,F
+Haiti,2010,PF
+Honduras,2010,PF
+Hong Kong,2010,PF
+Hungary,2010,F
+Iceland,2010,F
+India,2010,F
+Indian Kashmir,2010,PF
+Indonesia,2010,F
+Iran,2010,NF
+Iraq,2010,NF
+Ireland,2010,F
+Israel,2010,F
+Israeli Occupied Territories,2010,NF
+Italy,2010,F
+Jamaica,2010,F
+Japan,2010,F
+Jordan,2010,NF
+Kazakhstan,2010,NF
+Kenya,2010,PF
+Kiribati,2010,F
+Kosovo,2010,PF
+Kuwait,2010,PF
+Kyrgyzstan,2010,NF
+Laos,2010,NF
+Latvia,2010,F
+Lebanon,2010,PF
+Lesotho,2010,PF
+Liberia,2010,PF
+Libya,2010,NF
+Liechtenstein,2010,F
+Lithuania,2010,F
+Luxembourg,2010,F
+Macedonia,2010,PF
+Madagascar,2010,PF
+Malawi,2010,PF
+Malaysia,2010,PF
+Maldives,2010,PF
+Mali,2010,F
+Malta,2010,F
+Marshall Islands,2010,F
+Mauritania,2010,NF
+Mauritius,2010,F
+Mexico,2010,F
+Micronesia,2010,F
+Moldova,2010,PF
+Monaco,2010,F
+Mongolia,2010,F
+Montenegro,2010,F
+Morocco,2010,PF
+Mozambique,2010,PF
+Myanmar,2010,NF
+Nagorno-Karabakh,2010,PF
+Namibia,2010,F
+Nauru,2010,F
+Nepal,2010,PF
+Netherlands,2010,F
+New Zealand,2010,F
+Nicaragua,2010,PF
+Niger,2010,PF
+Nigeria,2010,PF
+North Korea,2010,NF
+Northern Cyprus,2010,F
+Norway,2010,F
+Oman,2010,NF
+Pakistan,2010,PF
+Pakistani Kashmir,2010,NF
+Palau,2010,F
+Palestinian Authority Administered Territories,2010,NF
+Panama,2010,F
+Papua New Guinea,2010,PF
+Paraguay,2010,PF
+Peru,2010,F
+Philippines,2010,PF
+Poland,2010,F
+Portugal,2010,F
+Puerto Rico,2010,F
+Qatar,2010,NF
+Romania,2010,F
+Russian Federation,2010,NF
+Rwanda,2010,NF
+Samoa,2010,F
+San Marino,2010,F
+Sao Tome and Principe,2010,F
+Saudi Arabia,2010,NF
+Senegal,2010,PF
+Serbia,2010,F
+Seychelles,2010,PF
+Sierra Leone,2010,PF
+Singapore,2010,PF
+Slovak Republic,2010,F
+Slovenia,2010,F
+Solomon Islands,2010,PF
+Somalia,2010,NF
+Somaliland,2010,PF
+South Africa,2010,F
+South Korea,2010,F
+South Ossetia,2010,NF
+Spain,2010,F
+Sri Lanka,2010,PF
+St. Kitts and Nevis,2010,F
+St. Lucia,2010,F
+St. Vincent and the Grenadines,2010,F
+Sudan,2010,NF
+Suriname,2010,F
+Swaziland,2010,NF
+Sweden,2010,F
+Switzerland,2010,F
+Syria,2010,NF
+Taiwan,2010,F
+Tajikistan,2010,NF
+Tanzania,2010,PF
+Thailand,2010,PF
+"Gambia, The",2010,PF
+Tibet,2010,NF
+Timor-Leste,2010,PF
+Togo,2010,PF
+Tonga,2010,PF
+Transnistria,2010,NF
+Trinidad and Tobago,2010,F
+Tunisia,2010,NF
+Turkey,2010,PF
+Turkmenistan,2010,NF
+Tuvalu,2010,F
+Uganda,2010,PF
+Ukraine,2010,F
+United Arab Emirates,2010,NF
+United Kingdom,2010,F
+United States,2010,F
+Uruguay,2010,F
+Uzbekistan,2010,NF
+Vanuatu,2010,F
+Venezuela,2010,PF
+Vietnam,2010,NF
+Western Sahara,2010,NF
+Yemen,2010,NF
+Zambia,2010,PF
+Zimbabwe,2010,NF
+Abkhazia,2009,PF
+Afghanistan,2009,NF
+Albania,2009,PF
+Algeria,2009,NF
+Andorra,2009,F
+Angola,2009,NF
+Antigua and Barbuda,2009,F
+Argentina,2009,F
+Armenia,2009,PF
+Australia,2009,F
+Austria,2009,F
+Azerbaijan,2009,NF
+Bahamas,2009,F
+Bahrain,2009,PF
+Bangladesh,2009,PF
+Barbados,2009,F
+Belarus,2009,NF
+Belgium,2009,F
+Belize,2009,F
+Benin,2009,F
+Bhutan,2009,PF
+Bolivia,2009,PF
+Bosnia and Herzegovina,2009,PF
+Botswana,2009,F
+Brazil,2009,F
+Brunei,2009,NF
+Bulgaria,2009,F
+Burkina Faso,2009,PF
+Burundi,2009,PF
+Cambodia,2009,NF
+Cameroon,2009,NF
+Canada,2009,F
+Cape Verde,2009,F
+Central African Republic,2009,PF
+Chad,2009,NF
+Chechnya,2009,NF
+Chile,2009,F
+China,2009,NF
+Colombia,2009,PF
+Comoros,2009,PF
+"Congo, Rep.",2009,NF
+"Congo, Dem. Rep.",2009,NF
+Costa Rica,2009,F
+Cote d'Ivoire,2009,NF
+Croatia,2009,F
+Cuba,2009,NF
+Cyprus,2009,F
+Czech Republic,2009,F
+Denmark,2009,F
+Djibouti,2009,PF
+Dominica,2009,F
+Dominican Republic,2009,F
+Ecuador,2009,PF
+Egypt,2009,NF
+El Salvador,2009,F
+Equatorial Guinea,2009,NF
+Eritrea,2009,NF
+Estonia,2009,F
+Ethiopia,2009,PF
+Fiji,2009,PF
+Finland,2009,F
+France,2009,F
+Gabon,2009,PF
+Georgia,2009,PF
+Germany,2009,F
+Ghana,2009,F
+Greece,2009,F
+Grenada,2009,F
+Guatemala,2009,PF
+Guinea,2009,NF
+Guinea-Bissau,2009,PF
+Guyana,2009,F
+Haiti,2009,PF
+Honduras,2009,PF
+Hong Kong,2009,PF
+Hungary,2009,F
+Iceland,2009,F
+India,2009,F
+Indian Kashmir,2009,PF
+Indonesia,2009,F
+Iran,2009,NF
+Iraq,2009,NF
+Ireland,2009,F
+Israel,2009,F
+Israeli Occupied Territories,2009,NF
+Italy,2009,F
+Jamaica,2009,F
+Japan,2009,F
+Jordan,2009,PF
+Kazakhstan,2009,NF
+Kenya,2009,PF
+Kiribati,2009,F
+Kosovo,2009,NF
+Kuwait,2009,PF
+Kyrgyzstan,2009,PF
+Laos,2009,NF
+Latvia,2009,F
+Lebanon,2009,PF
+Lesotho,2009,F
+Liberia,2009,PF
+Libya,2009,NF
+Liechtenstein,2009,F
+Lithuania,2009,F
+Luxembourg,2009,F
+Macedonia,2009,PF
+Madagascar,2009,PF
+Malawi,2009,PF
+Malaysia,2009,PF
+Maldives,2009,PF
+Mali,2009,F
+Malta,2009,F
+Marshall Islands,2009,F
+Mauritania,2009,NF
+Mauritius,2009,F
+Mexico,2009,F
+Micronesia,2009,F
+Moldova,2009,PF
+Monaco,2009,F
+Mongolia,2009,F
+Montenegro,2009,PF
+Morocco,2009,PF
+Mozambique,2009,PF
+Myanmar,2009,NF
+Nagorno-Karabakh,2009,PF
+Namibia,2009,F
+Nauru,2009,F
+Nepal,2009,PF
+Netherlands,2009,F
+New Zealand,2009,F
+Nicaragua,2009,PF
+Niger,2009,PF
+Nigeria,2009,PF
+North Korea,2009,NF
+Northern Cyprus,2009,F
+Norway,2009,F
+Oman,2009,NF
+Pakistan,2009,PF
+Pakistani Kashmir,2009,NF
+Palau,2009,F
+Palestinian Authority Administered Territories,2009,NF
+Panama,2009,F
+Papua New Guinea,2009,PF
+Paraguay,2009,PF
+Peru,2009,F
+Philippines,2009,PF
+Poland,2009,F
+Portugal,2009,F
+Puerto Rico,2009,F
+Qatar,2009,NF
+Romania,2009,F
+Russian Federation,2009,NF
+Rwanda,2009,NF
+Samoa,2009,F
+San Marino,2009,F
+Sao Tome and Principe,2009,F
+Saudi Arabia,2009,NF
+Senegal,2009,PF
+Serbia,2009,F
+Seychelles,2009,PF
+Sierra Leone,2009,PF
+Singapore,2009,PF
+Slovak Republic,2009,F
+Slovenia,2009,F
+Solomon Islands,2009,PF
+Somalia,2009,NF
+Somaliland,2009,PF
+South Africa,2009,F
+South Korea,2009,F
+South Ossetia,2009,NF
+Spain,2009,F
+Sri Lanka,2009,PF
+St. Kitts and Nevis,2009,F
+St. Lucia,2009,F
+St. Vincent and the Grenadines,2009,F
+Sudan,2009,NF
+Suriname,2009,F
+Swaziland,2009,NF
+Sweden,2009,F
+Switzerland,2009,F
+Syria,2009,NF
+Taiwan,2009,F
+Tajikistan,2009,NF
+Tanzania,2009,PF
+Thailand,2009,PF
+"Gambia, The",2009,PF
+Tibet,2009,NF
+Timor-Leste,2009,PF
+Togo,2009,PF
+Tonga,2009,PF
+Transnistria,2009,NF
+Trinidad and Tobago,2009,F
+Tunisia,2009,NF
+Turkey,2009,PF
+Turkmenistan,2009,NF
+Tuvalu,2009,F
+Uganda,2009,PF
+Ukraine,2009,F
+United Arab Emirates,2009,NF
+United Kingdom,2009,F
+United States,2009,F
+Uruguay,2009,F
+Uzbekistan,2009,NF
+Vanuatu,2009,F
+Venezuela,2009,PF
+Vietnam,2009,NF
+Western Sahara,2009,NF
+Yemen,2009,PF
+Zambia,2009,PF
+Zimbabwe,2009,NF
+Abkhazia,2008,PF
+Afghanistan,2008,PF
+Albania,2008,PF
+Algeria,2008,NF
+Andorra,2008,F
+Angola,2008,NF
+Antigua and Barbuda,2008,F
+Argentina,2008,F
+Armenia,2008,PF
+Australia,2008,F
+Austria,2008,F
+Azerbaijan,2008,NF
+Bahamas,2008,F
+Bahrain,2008,PF
+Bangladesh,2008,PF
+Barbados,2008,F
+Belarus,2008,NF
+Belgium,2008,F
+Belize,2008,F
+Benin,2008,F
+Bhutan,2008,NF
+Bolivia,2008,PF
+Bosnia and Herzegovina,2008,PF
+Botswana,2008,F
+Brazil,2008,F
+Brunei,2008,NF
+Bulgaria,2008,F
+Burkina Faso,2008,PF
+Burundi,2008,PF
+Cambodia,2008,NF
+Cameroon,2008,NF
+Canada,2008,F
+Cape Verde,2008,F
+Central African Republic,2008,PF
+Chad,2008,NF
+Chechnya,2008,NF
+Chile,2008,F
+China,2008,NF
+Colombia,2008,PF
+Comoros,2008,PF
+"Congo, Rep.",2008,NF
+"Congo, Dem. Rep.",2008,NF
+Costa Rica,2008,F
+Cote d'Ivoire,2008,NF
+Croatia,2008,F
+Cuba,2008,NF
+Cyprus,2008,F
+Czech Republic,2008,F
+Denmark,2008,F
+Djibouti,2008,PF
+Dominica,2008,F
+Dominican Republic,2008,F
+Ecuador,2008,PF
+Egypt,2008,NF
+El Salvador,2008,F
+Equatorial Guinea,2008,NF
+Eritrea,2008,NF
+Estonia,2008,F
+Ethiopia,2008,PF
+Fiji,2008,PF
+Finland,2008,F
+France,2008,F
+Gabon,2008,PF
+Georgia,2008,PF
+Germany,2008,F
+Ghana,2008,F
+Greece,2008,F
+Grenada,2008,F
+Guatemala,2008,PF
+Guinea,2008,NF
+Guinea-Bissau,2008,PF
+Guyana,2008,F
+Haiti,2008,PF
+Honduras,2008,PF
+Hong Kong,2008,PF
+Hungary,2008,F
+Iceland,2008,F
+India,2008,F
+Indian Kashmir,2008,PF
+Indonesia,2008,F
+Iran,2008,NF
+Iraq,2008,NF
+Ireland,2008,F
+Israel,2008,F
+Israeli Occupied Territories,2008,NF
+Italy,2008,F
+Jamaica,2008,F
+Japan,2008,F
+Jordan,2008,PF
+Kazakhstan,2008,NF
+Kenya,2008,PF
+Kiribati,2008,F
+Kosovo,2008,NF
+Kuwait,2008,PF
+Kyrgyzstan,2008,PF
+Laos,2008,NF
+Latvia,2008,F
+Lebanon,2008,PF
+Lesotho,2008,F
+Liberia,2008,PF
+Libya,2008,NF
+Liechtenstein,2008,F
+Lithuania,2008,F
+Luxembourg,2008,F
+Macedonia,2008,PF
+Madagascar,2008,PF
+Malawi,2008,PF
+Malaysia,2008,PF
+Maldives,2008,NF
+Mali,2008,F
+Malta,2008,F
+Marshall Islands,2008,F
+Mauritania,2008,PF
+Mauritius,2008,F
+Mexico,2008,F
+Micronesia,2008,F
+Moldova,2008,PF
+Monaco,2008,F
+Mongolia,2008,F
+Montenegro,2008,PF
+Morocco,2008,PF
+Mozambique,2008,PF
+Myanmar,2008,NF
+Nagorno-Karabakh,2008,PF
+Namibia,2008,F
+Nauru,2008,F
+Nepal,2008,PF
+Netherlands,2008,F
+New Zealand,2008,F
+Nicaragua,2008,PF
+Niger,2008,PF
+Nigeria,2008,PF
+North Korea,2008,NF
+Northern Cyprus,2008,F
+Norway,2008,F
+Oman,2008,NF
+Pakistan,2008,NF
+Pakistani Kashmir,2008,NF
+Palau,2008,F
+Palestinian Authority Administered Territories,2008,NF
+Panama,2008,F
+Papua New Guinea,2008,PF
+Paraguay,2008,PF
+Peru,2008,F
+Philippines,2008,PF
+Poland,2008,F
+Portugal,2008,F
+Puerto Rico,2008,F
+Qatar,2008,NF
+Romania,2008,F
+Russian Federation,2008,NF
+Rwanda,2008,NF
+Samoa,2008,F
+San Marino,2008,F
+Sao Tome and Principe,2008,F
+Saudi Arabia,2008,NF
+Senegal,2008,F
+Serbia,2008,F
+Seychelles,2008,PF
+Sierra Leone,2008,PF
+Singapore,2008,PF
+Slovak Republic,2008,F
+Slovenia,2008,F
+Solomon Islands,2008,PF
+Somalia,2008,NF
+South Africa,2008,F
+South Korea,2008,F
+Spain,2008,F
+Sri Lanka,2008,PF
+St. Kitts and Nevis,2008,F
+St. Lucia,2008,F
+St. Vincent and the Grenadines,2008,F
+Sudan,2008,NF
+Suriname,2008,F
+Swaziland,2008,NF
+Sweden,2008,F
+Switzerland,2008,F
+Syria,2008,NF
+Taiwan,2008,F
+Tajikistan,2008,NF
+Tanzania,2008,PF
+Thailand,2008,PF
+"Gambia, The",2008,PF
+Tibet,2008,NF
+Timor-Leste,2008,PF
+Togo,2008,PF
+Tonga,2008,PF
+Transnistria,2008,NF
+Trinidad and Tobago,2008,F
+Tunisia,2008,NF
+Turkey,2008,PF
+Turkmenistan,2008,NF
+Tuvalu,2008,F
+Uganda,2008,PF
+Ukraine,2008,F
+United Arab Emirates,2008,NF
+United Kingdom,2008,F
+United States,2008,F
+Uruguay,2008,F
+Uzbekistan,2008,NF
+Vanuatu,2008,F
+Venezuela,2008,PF
+Vietnam,2008,NF
+Western Sahara,2008,NF
+Yemen,2008,PF
+Zambia,2008,PF
+Zimbabwe,2008,NF
+Abkhazia,2007,PF
+Afghanistan,2007,PF
+Albania,2007,PF
+Algeria,2007,NF
+Andorra,2007,F
+Angola,2007,NF
+Antigua and Barbuda,2007,F
+Argentina,2007,F
+Armenia,2007,PF
+Australia,2007,F
+Austria,2007,F
+Azerbaijan,2007,NF
+Bahamas,2007,F
+Bahrain,2007,PF
+Bangladesh,2007,PF
+Barbados,2007,F
+Belarus,2007,NF
+Belgium,2007,F
+Belize,2007,F
+Benin,2007,F
+Bhutan,2007,NF
+Bolivia,2007,PF
+Bosnia and Herzegovina,2007,PF
+Botswana,2007,F
+Brazil,2007,F
+Brunei,2007,NF
+Bulgaria,2007,F
+Burkina Faso,2007,PF
+Burundi,2007,PF
+Cambodia,2007,NF
+Cameroon,2007,NF
+Canada,2007,F
+Cape Verde,2007,F
+Central African Republic,2007,PF
+Chad,2007,NF
+Chechnya,2007,NF
+Chile,2007,F
+China,2007,NF
+Colombia,2007,PF
+Comoros,2007,PF
+"Congo, Rep.",2007,NF
+"Congo, Dem. Rep.",2007,NF
+Costa Rica,2007,F
+Cote d'Ivoire,2007,NF
+Croatia,2007,F
+Cuba,2007,NF
+Cyprus,2007,F
+Czech Republic,2007,F
+Denmark,2007,F
+Djibouti,2007,PF
+Dominica,2007,F
+Dominican Republic,2007,F
+Ecuador,2007,PF
+Egypt,2007,NF
+El Salvador,2007,F
+Equatorial Guinea,2007,NF
+Eritrea,2007,NF
+Estonia,2007,F
+Ethiopia,2007,PF
+Fiji,2007,PF
+Finland,2007,F
+France,2007,F
+Gabon,2007,PF
+Georgia,2007,PF
+Germany,2007,F
+Ghana,2007,F
+Greece,2007,F
+Grenada,2007,F
+Guatemala,2007,PF
+Guinea,2007,NF
+Guinea-Bissau,2007,PF
+Guyana,2007,F
+Haiti,2007,PF
+Honduras,2007,PF
+Hong Kong,2007,PF
+Hungary,2007,F
+Iceland,2007,F
+India,2007,F
+Indian Kashmir,2007,PF
+Indonesia,2007,F
+Iran,2007,NF
+Iraq,2007,NF
+Ireland,2007,F
+Israel,2007,F
+Israeli Occupied Territories,2007,NF
+Italy,2007,F
+Jamaica,2007,F
+Japan,2007,F
+Jordan,2007,PF
+Kazakhstan,2007,NF
+Kenya,2007,PF
+Kiribati,2007,F
+Kosovo,2007,PF
+Kuwait,2007,PF
+Kyrgyzstan,2007,PF
+Laos,2007,NF
+Latvia,2007,F
+Lebanon,2007,PF
+Lesotho,2007,F
+Liberia,2007,PF
+Libya,2007,NF
+Liechtenstein,2007,F
+Lithuania,2007,F
+Luxembourg,2007,F
+Macedonia,2007,PF
+Madagascar,2007,PF
+Malawi,2007,PF
+Malaysia,2007,PF
+Maldives,2007,NF
+Mali,2007,F
+Malta,2007,F
+Marshall Islands,2007,F
+Mauritania,2007,PF
+Mauritius,2007,F
+Mexico,2007,F
+Micronesia,2007,F
+Moldova,2007,PF
+Monaco,2007,F
+Mongolia,2007,F
+Montenegro,2007,PF
+Morocco,2007,PF
+Mozambique,2007,PF
+Myanmar,2007,NF
+Nagorno-Karabakh,2007,PF
+Namibia,2007,F
+Nauru,2007,F
+Nepal,2007,PF
+Netherlands,2007,F
+New Zealand,2007,F
+Nicaragua,2007,PF
+Niger,2007,PF
+Nigeria,2007,PF
+North Korea,2007,NF
+Northern Cyprus,2007,F
+Norway,2007,F
+Oman,2007,NF
+Pakistan,2007,NF
+Pakistani Kashmir,2007,NF
+Palau,2007,F
+Palestinian Authority Administered Territories,2007,PF
+Panama,2007,F
+Papua New Guinea,2007,PF
+Paraguay,2007,PF
+Peru,2007,F
+Philippines,2007,PF
+Poland,2007,F
+Portugal,2007,F
+Puerto Rico,2007,F
+Qatar,2007,NF
+Romania,2007,F
+Russian Federation,2007,NF
+Rwanda,2007,NF
+Samoa,2007,F
+San Marino,2007,F
+Sao Tome and Principe,2007,F
+Saudi Arabia,2007,NF
+Senegal,2007,F
+Serbia,2007,F
+Seychelles,2007,PF
+Sierra Leone,2007,PF
+Singapore,2007,PF
+Slovak Republic,2007,F
+Slovenia,2007,F
+Solomon Islands,2007,PF
+Somalia,2007,NF
+South Africa,2007,F
+South Korea,2007,F
+Spain,2007,F
+Sri Lanka,2007,PF
+St. Kitts and Nevis,2007,F
+St. Lucia,2007,F
+St. Vincent and the Grenadines,2007,F
+Sudan,2007,NF
+Suriname,2007,F
+Swaziland,2007,NF
+Sweden,2007,F
+Switzerland,2007,F
+Syria,2007,NF
+Taiwan,2007,F
+Tajikistan,2007,NF
+Tanzania,2007,PF
+Thailand,2007,NF
+"Gambia, The",2007,PF
+Tibet,2007,NF
+Timor-Leste,2007,PF
+Togo,2007,NF
+Tonga,2007,PF
+Transnistria,2007,NF
+Trinidad and Tobago,2007,F
+Tunisia,2007,NF
+Turkey,2007,PF
+Turkmenistan,2007,NF
+Tuvalu,2007,F
+Uganda,2007,PF
+Ukraine,2007,F
+United Arab Emirates,2007,NF
+United Kingdom,2007,F
+United States,2007,F
+Uruguay,2007,F
+Uzbekistan,2007,NF
+Vanuatu,2007,F
+Venezuela,2007,PF
+Vietnam,2007,NF
+Western Sahara,2007,NF
+Yemen,2007,PF
+Zambia,2007,PF
+Zimbabwe,2007,NF
+Abkhazia,2006,PF
+Afghanistan,2006,PF
+Albania,2006,PF
+Algeria,2006,NF
+Andorra,2006,F
+Angola,2006,NF
+Antigua and Barbuda,2006,F
+Argentina,2006,F
+Armenia,2006,PF
+Australia,2006,F
+Austria,2006,F
+Azerbaijan,2006,NF
+Bahamas,2006,F
+Bahrain,2006,PF
+Bangladesh,2006,PF
+Barbados,2006,F
+Belarus,2006,NF
+Belgium,2006,F
+Belize,2006,F
+Benin,2006,F
+Bhutan,2006,NF
+Bolivia,2006,PF
+Bosnia and Herzegovina,2006,PF
+Botswana,2006,F
+Brazil,2006,F
+Brunei,2006,NF
+Bulgaria,2006,F
+Burkina Faso,2006,PF
+Burundi,2006,PF
+Cambodia,2006,NF
+Cameroon,2006,NF
+Canada,2006,F
+Cape Verde,2006,F
+Central African Republic,2006,PF
+Chad,2006,NF
+Chechnya,2006,NF
+Chile,2006,F
+China,2006,NF
+Colombia,2006,PF
+Comoros,2006,PF
+"Congo, Rep.",2006,PF
+"Congo, Dem. Rep.",2006,NF
+Costa Rica,2006,F
+Cote d'Ivoire,2006,NF
+Croatia,2006,F
+Cuba,2006,NF
+Cyprus,2006,F
+Czech Republic,2006,F
+Denmark,2006,F
+Djibouti,2006,PF
+Dominica,2006,F
+Dominican Republic,2006,F
+Ecuador,2006,PF
+Egypt,2006,NF
+El Salvador,2006,F
+Equatorial Guinea,2006,NF
+Eritrea,2006,NF
+Estonia,2006,F
+Ethiopia,2006,PF
+Fiji,2006,PF
+Finland,2006,F
+France,2006,F
+Gabon,2006,PF
+Georgia,2006,PF
+Germany,2006,F
+Ghana,2006,F
+Greece,2006,F
+Grenada,2006,F
+Guatemala,2006,PF
+Guinea,2006,NF
+Guinea-Bissau,2006,PF
+Guyana,2006,PF
+Haiti,2006,NF
+Honduras,2006,PF
+Hong Kong,2006,PF
+Hungary,2006,F
+Iceland,2006,F
+India,2006,F
+Indian Kashmir,2006,PF
+Indonesia,2006,F
+Iran,2006,NF
+Iraq,2006,NF
+Ireland,2006,F
+Israel,2006,F
+Israeli Occupied Territories,2006,NF
+Italy,2006,F
+Jamaica,2006,F
+Japan,2006,F
+Jordan,2006,PF
+Kazakhstan,2006,NF
+Kenya,2006,PF
+Kiribati,2006,F
+Kosovo,2006,PF
+Kuwait,2006,PF
+Kyrgyzstan,2006,PF
+Laos,2006,NF
+Latvia,2006,F
+Lebanon,2006,PF
+Lesotho,2006,F
+Liberia,2006,PF
+Libya,2006,NF
+Liechtenstein,2006,F
+Lithuania,2006,F
+Luxembourg,2006,F
+Macedonia,2006,PF
+Madagascar,2006,PF
+Malawi,2006,PF
+Malaysia,2006,PF
+Maldives,2006,NF
+Mali,2006,F
+Malta,2006,F
+Marshall Islands,2006,F
+Mauritania,2006,PF
+Mauritius,2006,F
+Mexico,2006,F
+Micronesia,2006,F
+Moldova,2006,PF
+Monaco,2006,F
+Mongolia,2006,F
+Morocco,2006,PF
+Mozambique,2006,PF
+Myanmar,2006,NF
+Nagorno-Karabakh,2006,PF
+Namibia,2006,F
+Nauru,2006,F
+Nepal,2006,NF
+Netherlands,2006,F
+New Zealand,2006,F
+Nicaragua,2006,PF
+Niger,2006,PF
+Nigeria,2006,PF
+North Korea,2006,NF
+Northern Cyprus,2006,F
+Norway,2006,F
+Oman,2006,NF
+Pakistan,2006,NF
+Pakistani Kashmir,2006,NF
+Palau,2006,F
+Palestinian Authority Administered Territories,2006,PF
+Panama,2006,F
+Papua New Guinea,2006,PF
+Paraguay,2006,PF
+Peru,2006,F
+Philippines,2006,PF
+Poland,2006,F
+Portugal,2006,F
+Puerto Rico,2006,F
+Qatar,2006,NF
+Romania,2006,F
+Russian Federation,2006,NF
+Rwanda,2006,NF
+Samoa,2006,F
+San Marino,2006,F
+Sao Tome and Principe,2006,F
+Saudi Arabia,2006,NF
+Senegal,2006,F
+Serbia,2006,F
+Seychelles,2006,PF
+Sierra Leone,2006,PF
+Singapore,2006,PF
+Slovak Republic,2006,F
+Slovenia,2006,F
+Solomon Islands,2006,PF
+Somalia,2006,NF
+South Africa,2006,F
+South Korea,2006,F
+Spain,2006,F
+Sri Lanka,2006,PF
+St. Kitts and Nevis,2006,F
+St. Lucia,2006,F
+St. Vincent and the Grenadines,2006,F
+Sudan,2006,NF
+Suriname,2006,F
+Swaziland,2006,NF
+Sweden,2006,F
+Switzerland,2006,F
+Syria,2006,NF
+Taiwan,2006,F
+Tajikistan,2006,NF
+Tanzania,2006,PF
+Thailand,2006,PF
+"Gambia, The",2006,PF
+Tibet,2006,NF
+Timor-Leste,2006,PF
+Togo,2006,NF
+Tonga,2006,PF
+Transnistria,2006,NF
+Trinidad and Tobago,2006,F
+Tunisia,2006,NF
+Turkey,2006,PF
+Turkmenistan,2006,NF
+Tuvalu,2006,F
+Uganda,2006,PF
+Ukraine,2006,F
+United Arab Emirates,2006,NF
+United Kingdom,2006,F
+United States,2006,F
+Uruguay,2006,F
+Uzbekistan,2006,NF
+Vanuatu,2006,F
+Venezuela,2006,PF
+Vietnam,2006,NF
+Western Sahara,2006,NF
+Yemen,2006,PF
+Zambia,2006,PF
+Zimbabwe,2006,NF
