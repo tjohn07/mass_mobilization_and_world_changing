@@ -32,12 +32,16 @@ def categorical_to_encode(df,  columns_to_label_encode, columns_to_get_dummies):
     columns_to_get_dummies: a list of columns to apply GetDummies
     Output:
     an encoded data frame ready for modeling.
+    Prints a dictionary of label encoding key.
     '''
     #resetting 'duration' column to remove letters, resulting in a numeric column
 
     for column in columns_to_label_encode:
         le = LabelEncoder()
-        df[column] = le.fit_transform(df[column])
+        le.fit(df[column])
+        le_name_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
+        print(le_name_mapping)
+        df[column] = le.transform(df[column])
     for column in columns_to_get_dummies:
         dummy_df = pd.get_dummies(df[column], drop_first=True)
         df = pd.concat([df, dummy_df], axis=1)
