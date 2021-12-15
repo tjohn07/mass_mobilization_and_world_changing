@@ -2,7 +2,7 @@
 # Predicting Protest Outcomes:
 ## A Study of the Mass Mobilization Dataset Alongside Various Indices
 
-By: erri John
+By: Terri John
 
 
 This ReadMe contains:
