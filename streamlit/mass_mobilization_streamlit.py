@@ -255,123 +255,121 @@ if page == "Multiclass Classification Model":
         get_country_stats_wgi = wgi[(wgi['country_name'] == country) & (wgi['year'] == year) ].reset_index(drop=True)
         get_country_stats_fiw = fiw[(fiw['country_name'] == country) & (fiw['year'] == year) ].reset_index(drop=True)
 
-        try:
-            CC_EST = get_country_stats_wgi['CC.EST'][0]
-            GE_EST = get_country_stats_wgi['GE.EST'][0]
-            PV_NO_SRC = get_country_stats_wgi['PV.NO.SRC'][0]
-            RL_EST = get_country_stats_wgi['RL.EST'][0]
-            VA_EST = get_country_stats_wgi['VA.EST'][0]
 
-            NF = 0
-            PF = 0
+        CC_EST = get_country_stats_wgi['CC.EST'][0]
+        GE_EST = get_country_stats_wgi['GE.EST'][0]
+        PV_NO_SRC = get_country_stats_wgi['PV.NO.SRC'][0]
+        RL_EST = get_country_stats_wgi['RL.EST'][0]
+        VA_EST = get_country_stats_wgi['VA.EST'][0]
 
-            if get_country_stats_fiw['fiw_status'][0] == 'NF':
-                NF = 1
-            elif get_country_stats_fiw['fiw_status'][0] == 'PF':
-                PF = 1
+        NF = 0
+        PF = 0
 
-
-            protesterviolence=0
-            if protester_violence == True:
-                protesterviolence = 1
-            else:
-                protesterviolence = 0
-
-            region = get_country_stats_mm['region'][0]
-            asia =0
-            central_america=0
-            europe=0
-            mena=0
-            n_america=0
-            oceania=0
-            s_america=0
-
-            if region == "Asia":
-                asia = 1
-            elif region == "Central America":
-                central_america = 1
-            elif region == "Europe":
-                europe = 1
-            elif region == "Middle East and North Africa":
-                mena = 1
-            elif region == 'North America':
-                n_america = 1
-            elif region == 'Oceania':
-                oceania = 1
-            elif region == 's_america':
-                s_america =1
+        if get_country_stats_fiw['fiw_status'][0] == 'NF':
+            NF = 1
+        elif get_country_stats_fiw['fiw_status'][0] == 'PF':
+            PF = 1
 
 
+        protesterviolence=0
+        if protester_violence == True:
+            protesterviolence = 1
+        else:
+            protesterviolence = 0
+
+        region = get_country_stats_mm['region'][0]
+        asia =0
+        central_america=0
+        europe=0
+        mena=0
+        n_america=0
+        oceania=0
+        s_america=0
+
+        if region == "Asia":
+            asia = 1
+        elif region == "Central America":
+            central_america = 1
+        elif region == "Europe":
+            europe = 1
+        elif region == "Middle East and North Africa":
+            mena = 1
+        elif region == 'North America':
+            n_america = 1
+        elif region == 'Oceania':
+            oceania = 1
+        elif region == 's_america':
+            s_america =1
+
+
+        participants_category = 1
+
+        if participants_count == '50-99':
+            participants_category = 2
+        elif participants_count == '100-999':
+            participants_category = 3
+        elif participants_count == '1000-1999':
+            participants_category = 4
+        elif participants_count == '2000-4999':
+            participants_category = 5
+        elif participants_count == '5000-10000':
+            participants_category = 6
+        elif participants_count == '>10000':
+            participants_category = 7
+        else:
             participants_category = 1
 
-            if participants_count == '50-99':
-                participants_category = 2
-            elif participants_count == '100-999':
-                participants_category = 3
-            elif participants_count == '1000-1999':
-                participants_category = 4
-            elif participants_count == '2000-4999':
-                participants_category = 5
-            elif participants_count == '5000-10000':
-                participants_category = 6
-            elif participants_count == '>10000':
-                participants_category = 7
-            else:
-                participants_category = 1
 
+        labor_wage_dispute = 0
+        land_farm_issue = 0
+        police_brutality = 0
+        political_behavior_process = 0
+        price_increases_tax_policy = 0
+        removal_politician = 0
+        social_restrictions = 0
 
-            labor_wage_dispute = 0
-            land_farm_issue = 0
-            police_brutality = 0
-            political_behavior_process = 0
-            price_increases_tax_policy = 0
-            removal_politician = 0
-            social_restrictions = 0
+        if motivation == 'labor wage dispute':
+            labor_wage_dispute = 1
+        if motivation == 'land farm issue':
+            land_farm_issue = 1
+        if motivation == 'police brutality':
+            police_brutality = 1
+        if motivation == 'political behavior, process':
+            political_behavior_process = 1
+        if motivation == 'price increases, tax policy':
+            price_increases_tax_policy = 1
+        if motivation == 'removal of politician':
+            removal_politician = 1
+        if motivation == 'social restrictions':
+            social_restrictions = 1
 
-            if motivation == 'labor wage dispute':
-                labor_wage_dispute = 1
-            if motivation == 'land farm issue':
-                land_farm_issue = 1
-            if motivation == 'police brutality':
-                police_brutality = 1
-            if motivation == 'political behavior, process':
-                political_behavior_process = 1
-            if motivation == 'price increases, tax policy':
-                price_increases_tax_policy = 1
-            if motivation == 'removal of politician':
-                removal_politician = 1
-            if motivation == 'social restrictions':
-                social_restrictions = 1
-
-            pred = stacks.predict([[year, protesterviolence, participants_category, duration,
-                                   labor_wage_dispute, land_farm_issue, police_brutality, political_behavior_process,
-                                   price_increases_tax_policy, removal_politician, social_restrictions, CC_EST, GE_EST,
-                                   PV_NO_SRC, RL_EST, VA_EST, asia, central_america, europe, mena, n_america,
-                                   oceania, s_america, NF, PF]])
+        pred = stacks.predict([[year, protesterviolence, participants_category, duration,
+                               labor_wage_dispute, land_farm_issue, police_brutality, political_behavior_process,
+                               price_increases_tax_policy, removal_politician, social_restrictions, CC_EST, GE_EST,
+                               PV_NO_SRC, RL_EST, VA_EST, asia, central_america, europe, mena, n_america,
+                               oceania, s_america, NF, PF]])
 
 
 
-            if pred == 0:
-                outcome = "accomodation"
-            elif pred == 1:
-                outcome = "arrests"
-            elif pred == 2:
-                outcome = "beatings"
-            elif pred == 3:
-                outcome = "crowd dispersal"
-            elif pred == 4:
-                outcome = "ignore"
-            elif pred == 5:
-                outcome = "killings"
-            elif pred == 6:
-                outcome = "shootings"
-            elif pred == 7:
-                outcome = "unknown"
+        if pred == 0:
+            outcome = "accomodation"
+        elif pred == 1:
+            outcome = "arrests"
+        elif pred == 2:
+            outcome = "beatings"
+        elif pred == 3:
+            outcome = "crowd dispersal"
+        elif pred == 4:
+            outcome = "ignore"
+        elif pred == 5:
+            outcome = "killings"
+        elif pred == 6:
+            outcome = "shootings"
+        elif pred == 7:
+            outcome = "unknown"
 
-            return outcome
+        return outcome
 
-        except:
-            print(f"We don't have enough information {country} for the year {year}. Please try another combination.")
 
 
 
