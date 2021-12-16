@@ -351,22 +351,22 @@ if page == "Multiclass Classification Model":
 
 
 
-        if pred == 0:
-            outcome = "accomodation"
-        elif pred == 1:
-            outcome = "arrests"
-        elif pred == 2:
-            outcome = "beatings"
-        elif pred == 3:
-            outcome = "crowd dispersal"
-        elif pred == 4:
-            outcome = "ignore"
-        elif pred == 5:
-            outcome = "killings"
-        elif pred == 6:
-            outcome = "shootings"
-        elif pred == 7:
-            outcome = "unknown"
+        if pred == 0:               #accomodation
+            outcome = " not issuing a notice. Violence is not predicted"
+        elif pred == 1:             #arrests
+            outcome = " issuing a notice advising that people avoid the area"
+        elif pred == 2:             #beatings
+            outcome = " issuing a notice."
+        elif pred == 3:             #crowd dispersal
+            outcome = " issuing a notice advising that people avoid the area"
+        elif pred == 4:             #ignore
+            outcome = " not issuing a notice. Violence is not predicted"
+        elif pred == 5:             #killings
+            outcome = " issuing a notice advising that people avoid the area"
+        elif pred == 6:             #shootings
+            outcome = " issuing a notice advising that people avoid the area"
+        elif pred == 7:             #unknown
+            outcome = " issuing a notice"
 
         return outcome
 
@@ -390,4 +390,4 @@ if page == "Multiclass Classification Model":
     if st.button("Generate a Prediction"):
         outcome = prediction(country, year, protesterviolence, participants_count, duration,
                        motivation)
-        st.write(f"Consider the possibility that this protest may result in the following state response: {outcome}.")
+        st.write(f"The model advises that you consider{outcome}.")
