@@ -14,7 +14,7 @@ This ReadMe contains:
 * [Modeling and Analysis](#model)
 * [Conclusion](#conclusion)
 * [Sources](#sources)
-* [Data Dictionary](#dict)
+
 
 
 ## <a name="contents"></a>Project Contents:
@@ -88,18 +88,30 @@ I created 2 classification models:
 |Binary Classification: KNN|74%|82%|82%|72%|
 |Multiclass Classficiation: Stacked|53%|70%|70%|66%
 
+Developing effective models was made more challenging by the highly unbalanced classes, alongside the general difficulties that come along with trying to predict human behavior. However, I was able to build 2 well fit classification models that outperform the baseline models.  Over time I would like to bring in and experiment with more features to work on improving the model.
+
+The binary classification model was designed to predict if protesters would engage in violence. I experimented with several model types, and found the best results with a KNearestNeighbors model.
+The multiclass classification model was designed to predict the primary state response, and found the best results with a stacked model that included knearestneighbors and a decision tree as estimators, and random forest as a final estimator.
+
+Because of the goal of my project, I had to spend some time considering which metric I wanted to prioritize - accuracy, precision, recall, for f1. Like in diplomacy, I decided that a balance was key. I wanted a balance between my false positives and false negatives, because prioritizing for one over the other would upset the balance of my goal to neither send an overabundance of protest alerts, nor too few. And so for evaluating my models we’ll be looking at accuracy and f1, or the balance between precision and recall.
+
+
 ### <a name="binary"></a>  Binary Classification Model
 
+I had initially considered created a binary classification model to predict if a state would respond with violence to a protest. However, the classes were simply unbalanced for such modeling to be practical. The state ignores 53%, and uses crowd dispersal in 28%. 95% of protests conclude without state violence.
+I shifted gears and decided to work on a binary classification model to predict if a protest will result in protester violence.
+
+For most of my binary classification models, I didn’t really tough the hyperparameters.  Leaving things at the default was producing well fit models, with train and test accuracy coming out on par with one another. To better improve this model, my next step would be to bring in more complexity and more data. I don’t necessarily want to engineer more features with my existing data, but I would like to bring in other metrics from other data sources. I did adjust the alpha on the decision tree to control for some overfitting to the training data that was resulting in perfect training accuracy and 80% accuracy on the testing data. Finally, I assembled a stacking classifier and tested various hyperparameters, but ultimately the KNearestNeighbors remained my most accurate model.
 
 
 ### <a name="multi"></a> Multiclass Classification Model
 
-
+I tackled predicting state response with multiclass classification. I tried several models, and found that using DecisionTree and Stacking Classifier I could outperform the baseline model by about 14% accuracy.  Like the binary classification model, I see a distinct need to bring in more data and more features in order to improve the accuracy.
 
 ## <a name="conclusion"></a>Conclusion:
 ### Limitations and Recommendations for next steps:
 * Bring in more metrics to include in the modeling process. The WorldBank Databank has a lot of interesting data that could be brought in. I looked at several metrics that I thought would be interesting to include, but there were too many nulls. With more time, we can evaluate these nulls and pull in more metrics.
-* Perform time series modeling. My initial goal for this project was to exame the long and short term effects of protests, and this is something that I hope to pursue in the future.
+* Perform time series modeling. My initial goal for this project was to examine the long and short term effects of protests, and this is something that I hope to pursue in the future.
 * Improve the data cleaning process to minimize loss of data - this will involve some manual cleaning.
 
 
