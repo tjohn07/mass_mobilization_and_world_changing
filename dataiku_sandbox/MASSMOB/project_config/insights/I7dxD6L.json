@@ -1,0 +1,261 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "mm_wgi_fiw",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "State Response by Freedom in the World Ranking",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "stateresponse1",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "fiw_status",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Sum of protest, descending"
+          }
+        }
+      ],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "protest",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "PERCENTAGE",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "fiw_status",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "___dku_no_value___": true
+          },
+          "isAGlobalFilter": false,
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "xAxisLabel": "State Response",
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABQlJREFUeF7t3G1sU1UYB/BzbrsXhA3cLK4O103o3eow2eYCrINEnSbI2BIc6CdissRkYIgJgbGhlkJieHHExC9+GDExfkBJyBKsYKKhviSQ+BITdZGhTqdLShgT2CUh60avuXe95ba2unuQbM/x30/37va0z/P8zjn33LZ3nOEhdQW41NkhOQZgyTsBgAEseQUkTw8jGMCSV0Dy9DCCASx5BSRPDyMYwJJXQPL0MIKTwL49kVadKQ9Y3r8f3tAvgz2AbcCMsV3mrs5+GDmycQeAZagAgCVS/IdUjCkaI1hiawBLjGukBmAAk6wAVtFYZJHsuI6DxhTtuGS0GgCYlpfjaAHsuGS0GtiBVU9xrKtZLUtmcKOjqaydVja3o8UiK8siywDe1qx6Zz61ZBqAqXZvW9yZIxjAEqDaUwCwZKCZ6QAYwCQrgEXWvyyy8uLXb26MNu5M6U6yMX5QG6eiDeDZAJ9tXJACjbPNAKbSvWexijZHMIAJimaEnGuRBWD6tmYGACYIGY1G3VfzAyX20J9pLrucLRUAUwUuDHxsha7z6a0da5aNApggZraQzREMYEk0s6SRCbzyp4M9/qF3LllP5a9dG7G2MUUT7AeZwG2fPPqne3pi5pzM2cs8rJ0DMEFYK2QAG/1Y4geAAYwpmtoAf3D36eWKkthrxO1SFN7X3lBl5YBzMDXNLPEmgY/NALNbfe2NLgBLAGulAOB0TOkWWQAGMK6DKc/YGMHzaATroaJN9nD4AW3gTjsXgOcTcHjRZqbzF5Mhfc33a7sBfKcVADDOwf9tH8r9ajpG8F0v9ZxeJgH4rvuKf9kw8O3VJfbwNtXfe81puAB2WjHnz3c0git7PlxvvcWWuspVTb7Sx82PBKduXGgfWJH6cTh/g92cTSgA/nuV9NDi59KvLK6/P5ta5nqOI2Bfd2Q742yL8WJPVnuHWwPlDxnbnvFzsbVfPW/ebsk403hYS7uf1tcd6bMC6FzjL1xZtuR7Y/+RC4ca/CPHVKyib/PooeKtjOudM7XkX/DwRGj+A++JvGl4GoF2BdXh6qXFZseoHTryi/pr/3KnwHq4KK0D8bB2yioCxevgk+dj3Vb89YP7/FV/HF/xvwM+cWIw3ypCx4/repXE1GPJGeNdHtbenjPgcNRtvfd7LYH1BW7llrFfPfyWGrh4NGgd4/sn0qZe+6g8ef7SK5yxFuNvdYOhn+cUWFdYhRHIU6rX0xpYNmZs33/lc0/wm05z25xZwlqPPYGKnsgha39bk+qpXrrYfG7t0OH71N/6r+Rq59v7UYN1bN8TgZKiBYWKsd/2WbClIH5ZTx67mAnMXYkXjGMuhStH2xoT1ms8fXZ1ceHU+ERy/1Tmb7J0ztYZx2o8RZ6uYI0ZY8HkWP6GT5viqXwm2ev2e5Mqek8/zDg3T08vNdfUVpXcY/7H2vLYGe+q73bEcuVW2ftBDU+wAuP4gdb6Zxfm5Zlfa9YNvlpaNXo8eXMbj2dO0ZXhaGpxu2ut31VeutDsUKu/3O72xs5Mm+9XvGiS7xw110GOzsF2NGzTqACAaTgJRwlg4dLRaAhgGk7CUQJYuHQ0GgKYhpNwlAAWLh2NhgCm4SQcJYCFS0ejIYBpOAlHCWDh0tFoCGAaTsJRAli4dDQaApiGk3CUABYuHY2GAKbhJBwlgIVLR6MhgGk4CUcJYOHS0WgIYBpOwlECWLh0NBoCmIaTcJR/Aa2I0n4bzWPoAAAAAElFTkSuQmCC",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "tjohn07@gmail.com",
+  "listed": false,
+  "name": "State Response by Freedom in the World Ranking on mm_wgi_fiw",
+  "dashboardCreationId": "WcYUomD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558254
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558254
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

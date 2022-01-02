@@ -1,0 +1,342 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "country_name",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "CountryMeaning",
+          "ok": false,
+          "empty": false
+        }
+      },
+      "column": "country_name",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "country_name",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:16113",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "country_name",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    }
+  ],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "duration"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "end_date_parsed",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "end_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "start_date_parsed",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "start_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "United Kingdom of Great Britain and Northern Ireland (the)",
+            "to": "United Kingdom"
+          },
+          {
+            "from": "Venezuela (Bolivarian Republic of)",
+            "to": "Venezuela"
+          },
+          {
+            "from": "",
+            "to": ""
+          },
+          {
+            "from": "Russian Federation (the)",
+            "to": "Russia"
+          },
+          {
+            "from": "Republic of Korea (the)",
+            "to": "Republic of Korea"
+          },
+          {
+            "from": "Iran (Islamic Republic of)",
+            "to": "Iran"
+          },
+          {
+            "from": "Sudan (the)",
+            "to": "Sudan"
+          },
+          {
+            "from": "Bolivia (Plurinational State of)",
+            "to": "Bolivia"
+          },
+          {
+            "from": "United Kingdom of Great Britain and Northern Ireland ",
+            "to": "United Kingdom"
+          },
+          {
+            "from": "Russian Federation ",
+            "to": "Russia"
+          },
+          {
+            "from": "Dominican Republic (the)",
+            "to": "Dominican Republic"
+          },
+          {
+            "from": "Netherlands (the)",
+            "to": "Netherlands"
+          },
+          {
+            "from": "Czech Republic (the)",
+            "to": "Czechia"
+          },
+          {
+            "from": "Republic of Moldova (the)",
+            "to": "Moldova"
+          },
+          {
+            "from": "Gambia (the)",
+            "to": "Gambia"
+          },
+          {
+            "from": "Niger (the)",
+            "to": "Niger"
+          },
+          {
+            "from": "Côte d\u0027Ivoire",
+            "to": "Ivory Coast"
+          },
+          {
+            "from": "Central African Republic (the)",
+            "to": "Central African Republic"
+          },
+          {
+            "from": "Congo (the)",
+            "to": "Congo"
+          },
+          {
+            "from": "Congo (the)",
+            "to": "DR Congo"
+          },
+          {
+            "from": "Democratic Republic of the Congo (the)",
+            "to": "Congo"
+          },
+          {
+            "from": "United Republic of Tanzania (the)",
+            "to": "Tanzania"
+          },
+          {
+            "from": "Comoros (the)",
+            "to": "Comoros"
+          },
+          {
+            "from": "Syrian Arab Republic",
+            "to": "Syria"
+          },
+          {
+            "from": "United Arab Emirates (the)",
+            "to": "United Arab Emirates"
+          },
+          {
+            "from": "Philippines (the)",
+            "to": "Philippines"
+          },
+          {
+            "from": "Viet Nam",
+            "to": "Vietnam"
+          },
+          {
+            "from": "Timor-Leste",
+            "to": "East Timor"
+          },
+          {
+            "from": "Democratic People\u0027s Republic of Korea (the)",
+            "to": "North Korea"
+          },
+          {
+            "from": "the former Yugoslav Republic of Macedonia",
+            "to": "Macedonia"
+          },
+          {
+            "from": "",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "country_name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "year",
+        "columns": [
+          "ccode"
+        ],
+        "reorderAction": "AFTER_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "end_date": 106,
+    "RL.EST": 100,
+    "CC.EST": 100,
+    "fiw_status": 100,
+    "year": 100,
+    "end_date_parsed": 183,
+    "stateresponse1": 148,
+    "removal of politician": 173,
+    "social restrictions": 158,
+    "VA.EST": 100,
+    "price increases, tax policy": 218,
+    "duration": 106,
+    "PV.NO.SRC": 100,
+    "start_date_parsed": 183,
+    "country_name": 348,
+    "police brutality": 135,
+    "GE.EST": 100,
+    "start_date": 120,
+    "labor wage dispute": 150,
+    "participants_category": 173,
+    "protest": 100,
+    "duration_int": 105,
+    "ccode": 100,
+    "political behavior, process": 218,
+    "protesterviolence": 143,
+    "protestnumber": 113,
+    "region": 100,
+    "land farm issue": 128
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "resolved": {
+        "algorithm": "LIGHTGBM_CLASSIFICATION",
+        "skipExpensiveReports": false,
+        "lightgbm": {
+            "boosting_type": "gbdt",
+            "num_leaves": 37,
+            "max_depth": -1,
+            "learning_rate": 0.10610008429606824,
+            "n_estimators": 7,
+            "subsample_for_bin": 200000,
+            "objective": null,
+            "min_split_gain": 0.8972476309568498,
+            "min_child_weight": 0.7131746126577959,
+            "min_child_samples": 12,
+            "subsample": 0.75,
+            "subsample_freq": 2,
+            "colsample_bytree": 0.8455800725203906,
+            "reg_alpha": 0.903927199330352,
+            "reg_lambda": 0.63354860594173,
+            "random_state": 1337,
+            "n_jobs": 4,
+            "importance_type": "split",
+            "early_stopping": false,
+            "early_stopping_rounds": null
+        }
+    },
+    "other": {}
+}

@@ -1,0 +1,455 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "mm_wgi_fiw",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "stacked_columns",
+      "variant": "normal",
+      "name": "State Response by Protest Motivation",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "stateresponse1",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of political behavior, process, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of political behavior, process, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of labor wage dispute, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of labor wage dispute, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Sum of police brutality, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Sum of police brutality, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Sum of land farm issue, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Sum of land farm issue, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Sum of social restrictions, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Sum of social restrictions, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Sum of removal of politician, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Sum of removal of politician, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Sum of price increases, tax policy, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Sum of price increases, tax policy, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Sum of political behavior, process, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [
+        {
+          "column": "participants_category",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 5,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of political behavior, process, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of political behavior, process, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of labor wage dispute, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of labor wage dispute, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Sum of police brutality, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Sum of police brutality, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Sum of land farm issue, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Sum of land farm issue, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Sum of social restrictions, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Sum of social restrictions, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Sum of removal of politician, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Sum of removal of politician, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Sum of price increases, tax policy, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Sum of price increases, tax policy, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "political behavior, process",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "labor wage dispute",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "police brutality",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "land farm issue",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "social restrictions",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "removal of politician",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "price increases, tax policy",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "xAxisLabel": "State Response",
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "tjohn07@gmail.com",
+  "listed": false,
+  "name": "State Response by Protest Motivation on mm_wgi_fiw",
+  "dashboardCreationId": "WcYUomD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558257
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558257
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

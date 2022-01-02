@@ -1,0 +1,214 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "mm_wgi_fiw",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "multi_columns_lines",
+      "variant": "normal",
+      "name": "State Response by Protest Duration",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "stateresponse1",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of duration_int, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of duration_int, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Average of duration_int, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "duration_int",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "xAxisLabel": "State Response",
+      "yAxisLabel": "Duration (days)",
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA2hJREFUeF7t3LFrE3EUB/D3Lko7KIgogmivi/+B7oIO0lNxkA7qqIOTiHgJIphFkqaDLi66Ooi61CTSwcXZxdFFSKzFQRQEx3A/SWvhTOTe5exL3+/8dv397vV7308uudwQJvyVugEu9dnh5AjAJX8RABjAJW+g5KeHKxjAJW+g5Kc30RUcVl8vO3J7Mztx5D61ousl782b05sYmCg5nnV2zvEHANvxB7AdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkUwEOq507cnr3o7907tHWviM3V/fLx2zu+PzgzPe8e/+3fVMBnos7q8w0k12ue/kH8O32sUrAjyUQDoJ6r7HwdmvffNy+4AIWXxwDnl1Zb5z+Js33fb2cwMw3JJhBMHsxDXyw/nyPdMxw/Wt98WeefVb2APi3RFjt3iVypzJhmL/0m9Gl9J6jtVcn8mCuNc+/y7Nvu/cA+B+B5+LuM2Z3KBPG0Zt+6+z97cbLMw/AOwB8+Fb7wO4KL0pAzLzeW4pWpH1Z6wDeKeBd/EKCY+KHaeD5Wvukc3xFOi5Jgsba8sLH4T4A+wd8LwfwVQCP3EUXvckq8hm88RZd/AoGsCvwNQnARDT8QfAivxc99QcdAMZb9OiDDlzBuIKJ/vKgo3yfwc7ty7qLc0SD0Z/0D+PuE+nOjzh5P/YsmoNYOo4r/HTsWTQFkXTcoDJTSz+q3LiCHYXScf1WdC29J9e5keulH3Rsfg8OGtL/YqbO2NekJLgsHZc4bha6i5YGY91eAxN9D7YXH4mkBgAsNeT5OoA9B5TiA1hqyPN1AHsOKMUHsNSQ5+sA9hxQig9gqSHP1wHsOaAUH8BSQ56vA9hzQCk+gKWGPF8HsOeAUnwASw15vg5gzwGl+ACWGvJ8HcCeA0rxASw15Pk6gD0HlOL/Alt2n348DZZkAAAAAElFTkSuQmCC",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "tjohn07@gmail.com",
+  "listed": false,
+  "name": "State Response by Protest Duration on mm_wgi_fiw",
+  "dashboardCreationId": "WcYUomD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558255
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1641159558255
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

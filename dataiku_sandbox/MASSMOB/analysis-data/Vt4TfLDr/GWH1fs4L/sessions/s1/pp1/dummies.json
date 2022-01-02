@@ -1,0 +1,38 @@
+{
+    "details": {
+        "fiw_status": {
+            "levels": [
+                "F",
+                "PF",
+                "NF"
+            ],
+            "with_others": true
+        },
+        "stateresponse1": {
+            "levels": [
+                "ignore",
+                "crowd dispersal",
+                "arrests",
+                "accomodation",
+                "shootings",
+                "killings",
+                "beatings",
+                "unknown"
+            ],
+            "with_others": true
+        },
+        "region": {
+            "levels": [
+                "Europe",
+                "Africa",
+                "Asia",
+                "MENA",
+                "South America",
+                "North America",
+                "Central America",
+                "Oceania"
+            ],
+            "with_others": true
+        }
+    }
+}

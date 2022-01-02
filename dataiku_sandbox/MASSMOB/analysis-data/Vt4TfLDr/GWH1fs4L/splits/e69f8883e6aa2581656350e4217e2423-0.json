@@ -1,0 +1,64 @@
+{
+  "cparams": {
+    "extractBeforePrepare": true,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "instanceIdRefresher": 0
+  },
+  "generationDate": 1641163814151,
+  "policyId": "extractBeforePrepare\u003dtrue,,ds\u003dmm_wgi_fiw_prepared,sel\u003d(method\u003dhead-s,records\u003d100000)",
+  "instanceId": "e69f8883e6aa2581656350e4217e2423-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"country_name","type":"string"},
+      {"name":"year","type":"bigint"},
+      {"name":"ccode","type":"bigint"},
+      {"name":"region","type":"string"},
+      {"name":"protest","type":"bigint"},
+      {"name":"protestnumber","type":"bigint"},
+      {"name":"protesterviolence","type":"bigint"},
+      {"name":"participants_category","type":"bigint"},
+      {"name":"stateresponse1","type":"string"},
+      {"name":"start_date","type":"string"},
+      {"name":"start_date_parsed","type":"date"},
+      {"name":"end_date","type":"string"},
+      {"name":"end_date_parsed","type":"date"},
+      {"name":"duration_int","type":"bigint"},
+      {"name":"labor wage dispute","type":"bigint"},
+      {"name":"land farm issue","type":"bigint"},
+      {"name":"police brutality","type":"bigint"},
+      {"name":"political behavior, process","type":"bigint"},
+      {"name":"price increases, tax policy","type":"bigint"},
+      {"name":"removal of politician","type":"bigint"},
+      {"name":"social restrictions","type":"bigint"},
+      {"name":"CC.EST","type":"double"},
+      {"name":"GE.EST","type":"double"},
+      {"name":"PV.NO.SRC","type":"double"},
+      {"name":"RL.EST","type":"double"},
+      {"name":"VA.EST","type":"double"},
+      {"name":"fiw_status","type":"string"}
+    ],
+    "userModified": false
+  },
+  "fullPath": "full-e69f8883e6aa2581656350e4217e2423-0.csv.gz",
+  "trainRows": 0,
+  "testRows": 0,
+  "fullRows": 8338
+}

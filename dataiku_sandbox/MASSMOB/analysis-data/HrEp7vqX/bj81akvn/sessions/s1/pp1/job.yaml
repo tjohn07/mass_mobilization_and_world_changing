@@ -1,0 +1,79 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dataiku-exec-doctor-train-lg4b0r6
+  labels:
+      dataiku.com/dku-analysis-id: hrep7vqx
+      dataiku.com/dku-mltask-id: bj81akvn
+      dataiku.com/dku-install-id: mAQXM7hrTawu8To4eTWP6zlc
+      dataiku.com/dku-execution-type: ANALYSIS_ML_TRAIN
+      dataiku.com/dku-mltask-session-id: s1
+      dataiku.com/dku-execution-id: doctor-train-lg4b0r6
+      dataiku.com/dku-project-key: massmob
+      jobgroup: dataiku-exec
+      dataiku.com/dku-exec-submitter: tjohn07-gmail.com
+  # To add labels to pods and jobs, set a dku.kubernetes.jobs.extraLabels key
+  # To add annotations to pods and jobs, set a dku.kubernetes.jobs.extraAnnotations key
+spec:
+  backoffLimit: 0
+  parallelism: 1
+  template:
+    metadata:
+      name: dataiku-exec
+      labels:
+          dataiku.com/dku-analysis-id: hrep7vqx
+          dataiku.com/dku-mltask-id: bj81akvn
+          dataiku.com/dku-install-id: mAQXM7hrTawu8To4eTWP6zlc
+          dataiku.com/dku-execution-type: ANALYSIS_ML_TRAIN
+          dataiku.com/dku-mltask-session-id: s1
+          dataiku.com/dku-execution-id: doctor-train-lg4b0r6
+          dataiku.com/dku-project-key: massmob
+          jobgroup: dataiku-exec
+          dataiku.com/dku-exec-submitter: tjohn07-gmail.com
+    spec:
+      containers:
+      - name: c
+        image: 538701811630.dkr.ecr.us-east-1.amazonaws.com/us-east-1-registry/dss-gis-exec-base-10.0.2-stw-14:1.0.60
+        imagePullPolicy: IfNotPresent # local image
+        env:
+        - name: DKU_EXECUTION_ID
+          value: "doctor-train-lg4b0r6"
+        - name: DKU_BACKEND_PORT
+          value: "44001"
+        - name: DKU_BACKEND_HOST
+          value: "10.0.142.240"
+        - name: DKU_BACKEND_PROTOCOL
+          value: "http"
+        - name: DKU_SERVER_PORT
+          value: "44001"
+        - name: DKU_SERVER_HOST
+          value: "10.0.142.240"
+        - name: DKU_SERVER_PROTOCOL
+          value: "http"
+        - name: DKU_SERVER_KIND
+          value: "BACKEND"
+        - name: DKU_SERVER_CERT
+          value: "NA"
+        - name: "DKU_API_TICKET"
+          valueFrom:
+            secretKeyRef:
+              name: dkusecret-doctor-train-lg4b0r6
+              key: apiticket
+        - name: REMOTE_WORKER_POOL_ID
+          value: "pool-scov5fhd28asine0"
+        - name: DKU_CURRENT_PROJECT_KEY
+          value: "MASSMOB"
+        resources:
+          requests:
+            cpu: "1.0"
+            memory: "4000Mi"
+          limits:
+            cpu: "1.0"
+            memory: "4400Mi"
+        # __DKU_KUBERNETES_HOSTPATH_VOLUME_MOUNTS__
+        args: ["$(DKU_EXECUTION_ID)"]
+      restartPolicy: Never
+      # __DKU_KUBERNETES_HOSTPATH_HOST_VOLUMES__
+      # __DKU_KUBERNETES_NODESELECTOR__
+      # __DKU_KUBERNETES_AFFINITY__
+      # __DKU_KUBERNETES_TOLERATIONS__

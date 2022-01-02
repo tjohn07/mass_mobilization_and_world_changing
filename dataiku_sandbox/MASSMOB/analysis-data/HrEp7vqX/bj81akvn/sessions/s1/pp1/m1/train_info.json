@@ -1,0 +1,91 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 24,
+    "searchStrategy": "RANDOM",
+    "importantParams": [
+      {
+        "name": "trees",
+        "min": "80",
+        "max": "200"
+      },
+      {
+        "name": "depth",
+        "min": "6",
+        "max": "20"
+      },
+      {
+        "name": "min_samples",
+        "min": "1",
+        "max": "20"
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "trees",
+        "val": "164"
+      },
+      {
+        "name": "depth",
+        "val": "19"
+      },
+      {
+        "name": "min_samples",
+        "val": "10"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 95
+      },
+      {
+        "name": "Loading test set",
+        "time": 33
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 63
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 465
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 310
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 1025412
+      },
+      {
+        "name": "Fitting model",
+        "time": 4191
+      },
+      {
+        "name": "Saving model",
+        "time": 107
+      },
+      {
+        "name": "Scoring model",
+        "time": 2547
+      }
+    ]
+  },
+  "startTime": 1641161152007,
+  "endTime": 1641162185672,
+  "preprocessingTime": 968,
+  "trainingTime": 1032697,
+  "hyperparamsSearchTime": 1025412
+}

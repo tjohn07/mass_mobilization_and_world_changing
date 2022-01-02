@@ -1,0 +1,32 @@
+{
+  "columns": [
+    {"name":"country_name","type":"string"},
+    {"name":"year","type":"bigint"},
+    {"name":"ccode","type":"bigint"},
+    {"name":"region","type":"string"},
+    {"name":"protest","type":"bigint"},
+    {"name":"protestnumber","type":"bigint"},
+    {"name":"protesterviolence","type":"bigint"},
+    {"name":"participants_category","type":"bigint"},
+    {"name":"stateresponse1","type":"string"},
+    {"name":"start_date","type":"string"},
+    {"name":"start_date_parsed","type":"date"},
+    {"name":"end_date","type":"string"},
+    {"name":"end_date_parsed","type":"date"},
+    {"name":"duration_int","type":"bigint"},
+    {"name":"labor wage dispute","type":"bigint"},
+    {"name":"land farm issue","type":"bigint"},
+    {"name":"police brutality","type":"bigint"},
+    {"name":"political behavior, process","type":"bigint"},
+    {"name":"price increases, tax policy","type":"bigint"},
+    {"name":"removal of politician","type":"bigint"},
+    {"name":"social restrictions","type":"bigint"},
+    {"name":"CC.EST","type":"double"},
+    {"name":"GE.EST","type":"double"},
+    {"name":"PV.NO.SRC","type":"double"},
+    {"name":"RL.EST","type":"double"},
+    {"name":"VA.EST","type":"double"},
+    {"name":"fiw_status","type":"string","meaning":"Text"}
+  ],
+  "userModified": true
+}

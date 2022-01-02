@@ -1,0 +1,41 @@
+{
+  "starred": true,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0,
+  "description": "",
+  "name": "Logistic Regression (s1)",
+  "labels": [
+    {
+      "key": "trainDataset:dataset-name",
+      "value": "mm_wgi_fiw_prepared"
+    },
+    {
+      "key": "testDataset:dataset-name",
+      "value": "mm_wgi_fiw_prepared"
+    },
+    {
+      "key": "evaluationDataset:dataset-name",
+      "value": "mm_wgi_fiw_prepared"
+    },
+    {
+      "key": "model:algorithm",
+      "value": "LOGISTIC_REGRESSION"
+    },
+    {
+      "key": "model:name",
+      "value": "Logistic Regression (s1)"
+    },
+    {
+      "key": "model:date",
+      "value": "2022-01-02T22:36:38.064+0000"
+    },
+    {
+      "key": "evaluation:date",
+      "value": "2022-01-02T22:36:38.064+0000"
+    }
+  ]
+}

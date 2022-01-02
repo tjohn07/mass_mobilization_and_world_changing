@@ -1,0 +1,73 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1641161145891,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dmm_wgi_fiw_prepared,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "3837d4e8a67118074a15cd6ec3f46167-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"country_name","type":"string"},
+      {"name":"year","type":"bigint"},
+      {"name":"ccode","type":"bigint"},
+      {"name":"region","type":"string"},
+      {"name":"protest","type":"bigint"},
+      {"name":"protestnumber","type":"bigint"},
+      {"name":"protesterviolence","type":"bigint"},
+      {"name":"participants_category","type":"bigint"},
+      {"name":"stateresponse1","type":"string"},
+      {"name":"start_date","type":"string"},
+      {"name":"start_date_parsed","type":"date"},
+      {"name":"end_date","type":"string"},
+      {"name":"end_date_parsed","type":"date"},
+      {"name":"duration_int","type":"bigint"},
+      {"name":"labor wage dispute","type":"bigint"},
+      {"name":"land farm issue","type":"bigint"},
+      {"name":"police brutality","type":"bigint"},
+      {"name":"political behavior, process","type":"bigint"},
+      {"name":"price increases, tax policy","type":"bigint"},
+      {"name":"removal of politician","type":"bigint"},
+      {"name":"social restrictions","type":"bigint"},
+      {"name":"CC.EST","type":"double"},
+      {"name":"GE.EST","type":"double"},
+      {"name":"PV.NO.SRC","type":"double"},
+      {"name":"RL.EST","type":"double"},
+      {"name":"VA.EST","type":"double"},
+      {"name":"fiw_status","type":"string"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train.csv.gz",
+  "testPath": "test.csv.gz",
+  "trainRows": 6689,
+  "testRows": 1649,
+  "fullRows": 0
+}

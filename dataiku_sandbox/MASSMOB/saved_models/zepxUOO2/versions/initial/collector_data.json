@@ -1,0 +1,331 @@
+{
+    "per_feature": {
+        "end_date": {
+            "stats": {}
+        },
+        "RL.EST": {
+            "stats": {
+                "min": -2.606445,
+                "average": -0.13862783881026647,
+                "median": -0.4073618,
+                "max": 2.105698,
+                "p99": 1.8247150000000003,
+                "std": 0.9801459373025243
+            },
+            "missing_impute_with_value": -0.13862783881026647
+        },
+        "CC.EST": {
+            "stats": {
+                "min": -1.868714,
+                "average": -0.19631768675941652,
+                "median": -0.4077929,
+                "max": 2.446495,
+                "p99": 1.936917,
+                "std": 0.9607779407003114
+            },
+            "missing_impute_with_value": -0.19631768675941652
+        },
+        "fiw_status": {
+            "stats": {
+                "mostFrequentValue": "F",
+                "leastFrequentValue": "NF"
+            },
+            "category_possible_values": [
+                "F",
+                "PF",
+                "NF"
+            ],
+            "category_possible_counts": [
+                3221,
+                3194,
+                1923
+            ]
+        },
+        "year": {
+            "stats": {
+                "min": 2006.0,
+                "average": 2013.3895418565603,
+                "median": 2014.0,
+                "max": 2020.0,
+                "p99": 2020.0,
+                "std": 3.943720182426819
+            },
+            "missing_impute_with_value": 2013.3895418565603
+        },
+        "end_date_parsed": {
+            "stats": {
+                "min": 3345148800.0,
+                "average": 3593199666.490765,
+                "median": 3605817600.0,
+                "max": 3794601600.0,
+                "p99": 3787776000.0,
+                "std": 124808044.25195889
+            }
+        },
+        "stateresponse1": {
+            "stats": {
+                "mostFrequentValue": "ignore",
+                "leastFrequentValue": "unknown"
+            },
+            "category_possible_values": [
+                "ignore",
+                "crowd dispersal",
+                "arrests",
+                "accomodation",
+                "shootings",
+                "killings",
+                "beatings",
+                "unknown"
+            ],
+            "category_possible_counts": [
+                4445,
+                2365,
+                572,
+                499,
+                232,
+                115,
+                98,
+                12
+            ]
+        },
+        "removal of politician": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.1573518829455505,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.36415404975558646
+            },
+            "missing_impute_with_value": 0.1573518829455505
+        },
+        "social restrictions": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.05360997841208923,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.2252599260030542
+            },
+            "missing_impute_with_value": 0.05360997841208923
+        },
+        "VA.EST": {
+            "stats": {
+                "min": -2.270496,
+                "average": -0.10807713823458646,
+                "median": -0.18996055,
+                "max": 1.687913,
+                "p99": 1.432262,
+                "std": 0.923792455879334
+            },
+            "missing_impute_with_value": -0.10807713823458646
+        },
+        "price increases, tax policy": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.09222835212281122,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.2893653839748322
+            },
+            "missing_impute_with_value": 0.09222835212281122
+        },
+        "PV.NO.SRC": {
+            "stats": {
+                "min": 1.0,
+                "average": 7.609258815063565,
+                "median": 8.0,
+                "max": 10.0,
+                "p99": 10.0,
+                "std": 1.2772619195812298
+            },
+            "missing_impute_with_value": 7.609258815063565
+        },
+        "start_date_parsed": {
+            "stats": {
+                "min": 3345148800.0,
+                "average": 3593035498.2010074,
+                "median": 3605731200.0,
+                "max": 3794601600.0,
+                "p99": 3787689600.0,
+                "std": 124811937.75862566
+            }
+        },
+        "country_name": {
+            "stats": {}
+        },
+        "police brutality": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.08239385943871431,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.2749803265484273
+            },
+            "missing_impute_with_value": 0.08239385943871431
+        },
+        "GE.EST": {
+            "stats": {
+                "min": -2.402195,
+                "average": -0.04219338211801246,
+                "median": -0.15821459999999998,
+                "max": 2.353998,
+                "p99": 1.735867,
+                "std": 0.9403139381927391
+            },
+            "missing_impute_with_value": -0.04219338211801246
+        },
+        "start_date": {
+            "stats": {}
+        },
+        "labor wage dispute": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.13252578556008635,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.3390818355185509
+            },
+            "missing_impute_with_value": 0.13252578556008635
+        },
+        "participants_category": {
+            "stats": {
+                "min": 1.0,
+                "average": 3.676061405612857,
+                "median": 3.0,
+                "max": 7.0,
+                "p99": 7.0,
+                "std": 1.7295920813098633
+            },
+            "missing_impute_with_value": 3.676061405612857
+        },
+        "protest": {
+            "stats": {}
+        },
+        "duration_int": {
+            "stats": {
+                "min": 1.0,
+                "average": 2.900095946270089,
+                "median": 1.0,
+                "max": 939.0,
+                "p99": 33.2599999999984,
+                "std": 20.295666813155005
+            },
+            "missing_impute_with_value": 2.900095946270089
+        },
+        "ccode": {
+            "stats": {
+                "min": 20.0,
+                "average": 451.9418325737587,
+                "median": 450.0,
+                "max": 910.0,
+                "p99": 840.0,
+                "std": 230.49722754735078
+            },
+            "missing_impute_with_value": 451.9418325737587
+        },
+        "political behavior, process": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.7187574958023507,
+                "median": 1.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.44963252193395264
+            },
+            "missing_impute_with_value": 0.7187574958023507
+        },
+        "protesterviolence": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.2589349964020149,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.43807611260233215
+            },
+            "missing_impute_with_value": 0.2589349964020149
+        },
+        "protestnumber": {
+            "stats": {
+                "min": 1.0,
+                "average": 10.357759654593428,
+                "median": 5.0,
+                "max": 143.0,
+                "p99": 75.6299999999992,
+                "std": 15.101876274839404
+            },
+            "missing_impute_with_value": 10.357759654593428
+        },
+        "region": {
+            "stats": {
+                "mostFrequentValue": "Europe",
+                "leastFrequentValue": "Oceania"
+            },
+            "category_possible_values": [
+                "Europe",
+                "Africa",
+                "Asia",
+                "MENA",
+                "South America",
+                "North America",
+                "Central America",
+                "Oceania"
+            ],
+            "category_possible_counts": [
+                2573,
+                1808,
+                1749,
+                1017,
+                683,
+                307,
+                188,
+                13
+            ]
+        },
+        "land farm issue": {
+            "stats": {
+                "min": 0.0,
+                "average": 0.04917246342048453,
+                "median": 0.0,
+                "max": 1.0,
+                "p99": 1.0,
+                "std": 0.21624093122711066
+            },
+            "missing_impute_with_value": 0.04917246342048453
+        }
+    },
+    "feature_order": [
+        "end_date",
+        "RL.EST",
+        "CC.EST",
+        "fiw_status",
+        "year",
+        "end_date_parsed",
+        "stateresponse1",
+        "removal of politician",
+        "social restrictions",
+        "VA.EST",
+        "price increases, tax policy",
+        "PV.NO.SRC",
+        "start_date_parsed",
+        "country_name",
+        "police brutality",
+        "GE.EST",
+        "start_date",
+        "labor wage dispute",
+        "participants_category",
+        "protest",
+        "duration_int",
+        "ccode",
+        "political behavior, process",
+        "protesterviolence",
+        "protestnumber",
+        "region",
+        "land farm issue"
+    ]
+}

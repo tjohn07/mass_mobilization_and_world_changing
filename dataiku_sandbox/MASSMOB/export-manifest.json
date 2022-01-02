@@ -1,0 +1,78 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": false,
+    "exportManagedFS": false,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": false,
+    "exportModelEvaluationStores": true,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": false,
+    "exportAllInputManagedFolders": false,
+    "exportGitRepository": false,
+    "exportInsightsData": false,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedModelEvaluationStores": [],
+    "includedManagedFolders": [],
+    "shareAllInputDatasets": false
+  },
+  "actualContent": {
+    "includedDatasets": [],
+    "includedSavedModels": [
+      {
+        "id": "PJAryeur",
+        "name": "Predict stateresponse1 (multiclass)",
+        "size": 3837325
+      },
+      {
+        "id": "zepxUOO2",
+        "name": "Clustering on mm_wgi_fiw_prepared",
+        "size": 780151
+      }
+    ],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "allAnalysisData": true,
+    "insightsData": false
+  },
+  "originalProjectKey": "MASSMOB",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "10.0.2-stw-14",
+  "generatedWithDSSConfVersion": "10000",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "1.1.2"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "dku-saas",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "k8s-metrics-utils",
+      "version": "1.0.0"
+    }
+  ],
+  "requiredConnections": {
+    "dataiku-managed-storage": {
+      "name": "dataiku-managed-storage",
+      "type": "EC2"
+    }
+  },
+  "usedCodeEnvRefs": [],
+  "hasPartitionedDataset": false
+}

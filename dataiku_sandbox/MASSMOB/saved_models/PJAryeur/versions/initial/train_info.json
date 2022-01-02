@@ -1,0 +1,83 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 24,
+    "searchStrategy": "RANDOM",
+    "importantParams": [
+      {
+        "name": "penalty",
+        "vals": [
+          "l1"
+        ]
+      },
+      {
+        "name": "C",
+        "min": "0.01",
+        "max": "100.0"
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "C",
+        "val": "4.7959585"
+      },
+      {
+        "name": "penalty",
+        "val": "l1"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 77
+      },
+      {
+        "name": "Loading test set",
+        "time": 33
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 52
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 462
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 213
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 1812867
+      },
+      {
+        "name": "Fitting model",
+        "time": 30874
+      },
+      {
+        "name": "Saving model",
+        "time": 3
+      },
+      {
+        "name": "Scoring model",
+        "time": 437
+      }
+    ]
+  },
+  "startTime": 1641161151811,
+  "endTime": 1641162998064,
+  "preprocessingTime": 840,
+  "trainingTime": 1845413,
+  "hyperparamsSearchTime": 1812867
+}

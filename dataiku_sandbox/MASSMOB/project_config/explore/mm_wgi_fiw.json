@@ -1,0 +1,1172 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "stacked_bars",
+        "variant": "normal",
+        "name": "Number of Protests by Country and Year - Top 20 for Total Protest Count",
+        "userEditedName": true,
+        "genericDimension0": [
+          {
+            "column": "country_name",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": false,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, descending"
+            }
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "year",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": "20",
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "protest",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "xAxisLabel": "",
+        "yAxisLabel": "Country Name",
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,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",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "State Response by Freedom in the World Ranking",
+        "userEditedName": true,
+        "genericDimension0": [
+          {
+            "column": "stateresponse1",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "fiw_status",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of protest, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of protest, descending"
+            }
+          }
+        ],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "protest",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "PERCENTAGE",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "fiw_status",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {
+              "___dku_no_value___": true
+            },
+            "isAGlobalFilter": false,
+            "explicitExclude": false
+          }
+        ],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "xAxisLabel": "State Response",
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABQlJREFUeF7t3G1sU1UYB/BzbrsXhA3cLK4O103o3eow2eYCrINEnSbI2BIc6CdissRkYIgJgbGhlkJieHHExC9+GDExfkBJyBKsYKKhviSQ+BITdZGhTqdLShgT2CUh60avuXe95ba2unuQbM/x30/37va0z/P8zjn33LZ3nOEhdQW41NkhOQZgyTsBgAEseQUkTw8jGMCSV0Dy9DCCASx5BSRPDyMYwJJXQPL0MIKTwL49kVadKQ9Y3r8f3tAvgz2AbcCMsV3mrs5+GDmycQeAZagAgCVS/IdUjCkaI1hiawBLjGukBmAAk6wAVtFYZJHsuI6DxhTtuGS0GgCYlpfjaAHsuGS0GtiBVU9xrKtZLUtmcKOjqaydVja3o8UiK8siywDe1qx6Zz61ZBqAqXZvW9yZIxjAEqDaUwCwZKCZ6QAYwCQrgEXWvyyy8uLXb26MNu5M6U6yMX5QG6eiDeDZAJ9tXJACjbPNAKbSvWexijZHMIAJimaEnGuRBWD6tmYGACYIGY1G3VfzAyX20J9pLrucLRUAUwUuDHxsha7z6a0da5aNApggZraQzREMYEk0s6SRCbzyp4M9/qF3LllP5a9dG7G2MUUT7AeZwG2fPPqne3pi5pzM2cs8rJ0DMEFYK2QAG/1Y4geAAYwpmtoAf3D36eWKkthrxO1SFN7X3lBl5YBzMDXNLPEmgY/NALNbfe2NLgBLAGulAOB0TOkWWQAGMK6DKc/YGMHzaATroaJN9nD4AW3gTjsXgOcTcHjRZqbzF5Mhfc33a7sBfKcVADDOwf9tH8r9ajpG8F0v9ZxeJgH4rvuKf9kw8O3VJfbwNtXfe81puAB2WjHnz3c0git7PlxvvcWWuspVTb7Sx82PBKduXGgfWJH6cTh/g92cTSgA/nuV9NDi59KvLK6/P5ta5nqOI2Bfd2Q742yL8WJPVnuHWwPlDxnbnvFzsbVfPW/ebsk403hYS7uf1tcd6bMC6FzjL1xZtuR7Y/+RC4ca/CPHVKyib/PooeKtjOudM7XkX/DwRGj+A++JvGl4GoF2BdXh6qXFZseoHTryi/pr/3KnwHq4KK0D8bB2yioCxevgk+dj3Vb89YP7/FV/HF/xvwM+cWIw3ypCx4/repXE1GPJGeNdHtbenjPgcNRtvfd7LYH1BW7llrFfPfyWGrh4NGgd4/sn0qZe+6g8ef7SK5yxFuNvdYOhn+cUWFdYhRHIU6rX0xpYNmZs33/lc0/wm05z25xZwlqPPYGKnsgha39bk+qpXrrYfG7t0OH71N/6r+Rq59v7UYN1bN8TgZKiBYWKsd/2WbClIH5ZTx67mAnMXYkXjGMuhStH2xoT1ms8fXZ1ceHU+ERy/1Tmb7J0ztYZx2o8RZ6uYI0ZY8HkWP6GT5viqXwm2ev2e5Mqek8/zDg3T08vNdfUVpXcY/7H2vLYGe+q73bEcuVW2ftBDU+wAuP4gdb6Zxfm5Zlfa9YNvlpaNXo8eXMbj2dO0ZXhaGpxu2ut31VeutDsUKu/3O72xs5Mm+9XvGiS7xw110GOzsF2NGzTqACAaTgJRwlg4dLRaAhgGk7CUQJYuHQ0GgKYhpNwlAAWLh2NhgCm4SQcJYCFS0ejIYBpOAlHCWDh0tFoCGAaTsJRAli4dDQaApiGk3CUABYuHY2GAKbhJBwlgIVLR6MhgGk4CUcJYOHS0WgIYBpOwlECWLh0NBoCmIaTcJR/Aa2I0n4bzWPoAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "multi_columns_lines",
+        "variant": "normal",
+        "name": "State Response by Protest Duration",
+        "userEditedName": true,
+        "genericDimension0": [
+          {
+            "column": "stateresponse1",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of duration_int, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of duration_int, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of duration_int, descending"
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "duration_int",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "xAxisLabel": "State Response",
+        "yAxisLabel": "Duration (days)",
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA2hJREFUeF7t3LFrE3EUB/D3Lko7KIgogmivi/+B7oIO0lNxkA7qqIOTiHgJIphFkqaDLi66Ooi61CTSwcXZxdFFSKzFQRQEx3A/SWvhTOTe5exL3+/8dv397vV7308uudwQJvyVugEu9dnh5AjAJX8RABjAJW+g5KeHKxjAJW+g5Kc30RUcVl8vO3J7Mztx5D61ousl782b05sYmCg5nnV2zvEHANvxB7AdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkAFap1c5QANuxUEkCYJVa7QwFsB0LlSQAVqnVzlAA27FQSQJglVrtDAWwHQuVJABWqdXOUADbsVBJAmCVWu0MBbAdC5UkUwEOq507cnr3o7907tHWviM3V/fLx2zu+PzgzPe8e/+3fVMBnos7q8w0k12ue/kH8O32sUrAjyUQDoJ6r7HwdmvffNy+4AIWXxwDnl1Zb5z+Js33fb2cwMw3JJhBMHsxDXyw/nyPdMxw/Wt98WeefVb2APi3RFjt3iVypzJhmL/0m9Gl9J6jtVcn8mCuNc+/y7Nvu/cA+B+B5+LuM2Z3KBPG0Zt+6+z97cbLMw/AOwB8+Fb7wO4KL0pAzLzeW4pWpH1Z6wDeKeBd/EKCY+KHaeD5Wvukc3xFOi5Jgsba8sLH4T4A+wd8LwfwVQCP3EUXvckq8hm88RZd/AoGsCvwNQnARDT8QfAivxc99QcdAMZb9OiDDlzBuIKJ/vKgo3yfwc7ty7qLc0SD0Z/0D+PuE+nOjzh5P/YsmoNYOo4r/HTsWTQFkXTcoDJTSz+q3LiCHYXScf1WdC29J9e5keulH3Rsfg8OGtL/YqbO2NekJLgsHZc4bha6i5YGY91eAxN9D7YXH4mkBgAsNeT5OoA9B5TiA1hqyPN1AHsOKMUHsNSQ5+sA9hxQig9gqSHP1wHsOaAUH8BSQ56vA9hzQCk+gKWGPF8HsOeAUnwASw15vg5gzwGl+ACWGvJ8HcCeA0rxASw15Pk6gD0HlOL/Alt2n348DZZkAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "stacked_columns",
+        "variant": "normal",
+        "name": "State Response by Protest Motivation",
+        "userEditedName": true,
+        "genericDimension0": [
+          {
+            "column": "stateresponse1",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of political behavior, process, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of political behavior, process, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Sum of labor wage dispute, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Sum of labor wage dispute, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Sum of police brutality, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Sum of police brutality, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Sum of land farm issue, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Sum of land farm issue, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
+                "label": "Sum of social restrictions, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
+                "label": "Sum of social restrictions, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 5,
+                "label": "Sum of removal of politician, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 5,
+                "label": "Sum of removal of politician, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 6,
+                "label": "Sum of price increases, tax policy, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 6,
+                "label": "Sum of price increases, tax policy, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of political behavior, process, descending"
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [
+          {
+            "column": "participants_category",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 5,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of political behavior, process, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Sum of political behavior, process, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Sum of labor wage dispute, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Sum of labor wage dispute, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Sum of police brutality, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Sum of police brutality, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Sum of land farm issue, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Sum of land farm issue, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
+                "label": "Sum of social restrictions, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 4,
+                "label": "Sum of social restrictions, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 5,
+                "label": "Sum of removal of politician, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 5,
+                "label": "Sum of removal of politician, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 6,
+                "label": "Sum of price increases, tax policy, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 6,
+                "label": "Sum of price increases, tax policy, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "political behavior, process",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "labor wage dispute",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "police brutality",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "land farm issue",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "social restrictions",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "removal of politician",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          },
+          {
+            "column": "price increases, tax policy",
+            "function": "SUM",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto"
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "xAxisLabel": "State Response",
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "displayXAxis": true,
+        "displayYAxis": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "yCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "xCustomExtent": {
+          "editMode": "AUTO",
+          "manualExtent": [
+            null,
+            null
+          ]
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "customColors": {},
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.6,
+          "gridLatDeg": 0.6
+        },
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}

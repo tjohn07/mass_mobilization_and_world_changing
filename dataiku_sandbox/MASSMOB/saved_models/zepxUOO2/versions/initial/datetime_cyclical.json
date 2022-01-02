@@ -1,0 +1,16 @@
+{
+    "mapping": {
+        "end_date_parsed": [
+            "YEAR",
+            "WEEK",
+            "MONTH",
+            "QUARTER"
+        ],
+        "start_date_parsed": [
+            "YEAR",
+            "WEEK",
+            "MONTH",
+            "QUARTER"
+        ]
+    }
+}

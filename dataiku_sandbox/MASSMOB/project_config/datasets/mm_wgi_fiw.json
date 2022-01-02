@@ -1,0 +1,292 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 26,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1640806050905
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tjohn07@gmail.com"
+    },
+    "lastModifiedOn": 1640806050392
+  },
+  "tags": [],
+  "params": {
+    "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-us-east-1",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_mm_wgi_fiw",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/mm_wgi_fiw",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "country_name",
+        "type": "string"
+      },
+      {
+        "name": "ccode",
+        "type": "string"
+      },
+      {
+        "name": "year",
+        "type": "string"
+      },
+      {
+        "name": "region",
+        "type": "string"
+      },
+      {
+        "name": "protest",
+        "type": "string"
+      },
+      {
+        "name": "protestnumber",
+        "type": "string"
+      },
+      {
+        "name": "protesterviolence",
+        "type": "string"
+      },
+      {
+        "name": "participants_category",
+        "type": "string"
+      },
+      {
+        "name": "stateresponse1",
+        "type": "string"
+      },
+      {
+        "name": "start_date",
+        "type": "string"
+      },
+      {
+        "name": "end_date",
+        "type": "string"
+      },
+      {
+        "name": "duration",
+        "type": "string"
+      },
+      {
+        "name": "duration_int",
+        "type": "string"
+      },
+      {
+        "name": "labor wage dispute",
+        "type": "string"
+      },
+      {
+        "name": "land farm issue",
+        "type": "string"
+      },
+      {
+        "name": "police brutality",
+        "type": "string"
+      },
+      {
+        "name": "political behavior, process",
+        "type": "string"
+      },
+      {
+        "name": "price increases, tax policy",
+        "type": "string"
+      },
+      {
+        "name": "removal of politician",
+        "type": "string"
+      },
+      {
+        "name": "social restrictions",
+        "type": "string"
+      },
+      {
+        "name": "CC.EST",
+        "type": "string"
+      },
+      {
+        "name": "GE.EST",
+        "type": "string"
+      },
+      {
+        "name": "PV.NO.SRC",
+        "type": "string"
+      },
+      {
+        "name": "RL.EST",
+        "type": "string"
+      },
+      {
+        "name": "VA.EST",
+        "type": "string"
+      },
+      {
+        "name": "fiw_status",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

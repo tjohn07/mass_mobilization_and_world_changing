@@ -1,0 +1,101 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 24,
+    "searchStrategy": "RANDOM",
+    "importantParams": [
+      {
+        "name": "boosting_type",
+        "vals": [
+          "gbdt"
+        ]
+      },
+      {
+        "name": "n_estimators",
+        "min": "50",
+        "max": "200"
+      },
+      {
+        "name": "num_leaves",
+        "min": "20",
+        "max": "500"
+      },
+      {
+        "name": "learning_rate",
+        "min": "0.1",
+        "max": "0.6"
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "boosting_type",
+        "val": "gbdt"
+      },
+      {
+        "name": "n_estimators",
+        "val": "7"
+      },
+      {
+        "name": "num_leaves",
+        "val": "37"
+      },
+      {
+        "name": "learning_rate",
+        "val": "0.10610008429606824"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 82
+      },
+      {
+        "name": "Loading test set",
+        "time": 34
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 53
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 550
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 210
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 217358
+      },
+      {
+        "name": "Fitting model",
+        "time": 688
+      },
+      {
+        "name": "Saving model",
+        "time": 88
+      },
+      {
+        "name": "Scoring model",
+        "time": 394
+      }
+    ]
+  },
+  "startTime": 1641162205577,
+  "endTime": 1641162425494,
+  "preprocessingTime": 932,
+  "trainingTime": 218985,
+  "hyperparamsSearchTime": 217358
+}
